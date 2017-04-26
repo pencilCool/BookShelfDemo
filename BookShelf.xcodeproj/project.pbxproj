@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FCF95D7CD0AD412BB89C39D /* libPods-BookShelf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F379553AA307065F429C24D6 /* libPods-BookShelf.a */; };
+		EC701E351EAF476800D4EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E341EAF476800D4EFCE /* main.m */; };
+		EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E371EAF476800D4EFCE /* AppDelegate.m */; };
+		EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E3A1EAF476800D4EFCE /* ViewController.m */; };
+		EC701E3E1EAF476800D4EFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC701E3C1EAF476800D4EFCE /* Main.storyboard */; };
+		EC701E401EAF476800D4EFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC701E3F1EAF476800D4EFCE /* Assets.xcassets */; };
+		EC701E431EAF476800D4EFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC701E411EAF476800D4EFCE /* LaunchScreen.storyboard */; };
+		EC701E4E1EAF476800D4EFCE /* BookShelfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E4D1EAF476800D4EFCE /* BookShelfTests.m */; };
+		EC701E591EAF476800D4EFCE /* BookShelfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E581EAF476800D4EFCE /* BookShelfUITests.m */; };
+		EC701E681EAF4A5A00D4EFCE /* SXBookShelfCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E671EAF4A5A00D4EFCE /* SXBookShelfCell.m */; };
+		EC701E6C1EAF51A500D4EFCE /* UIColor+SXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E6B1EAF51A500D4EFCE /* UIColor+SXAdd.m */; };
+		EC701EBC1EAF644C00D4EFCE /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EC701EBB1EAF644C00D4EFCE /* testImage.png */; };
+		EC701EBF1EAF675600D4EFCE /* BookShelfHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701EBE1EAF675600D4EFCE /* BookShelfHeadView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC701E4A1EAF476800D4EFCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC701E281EAF476800D4EFCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC701E2F1EAF476800D4EFCE;
+			remoteInfo = BookShelf;
+		};
+		EC701E551EAF476800D4EFCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC701E281EAF476800D4EFCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC701E2F1EAF476800D4EFCE;
+			remoteInfo = BookShelf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D512A06A0366BE1E9E53BB /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0D743C249A4F6DF7D4E080 /* Pods-BookShelf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.release.xcconfig"; sourceTree = "<group>"; };
+		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC701E371EAF476800D4EFCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC701E391EAF476800D4EFCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC701E3A1EAF476800D4EFCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC701E3D1EAF476800D4EFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC701E3F1EAF476800D4EFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC701E421EAF476800D4EFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC701E441EAF476800D4EFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC701E491EAF476800D4EFCE /* BookShelfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookShelfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC701E4D1EAF476800D4EFCE /* BookShelfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookShelfTests.m; sourceTree = "<group>"; };
+		EC701E4F1EAF476800D4EFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC701E541EAF476800D4EFCE /* BookShelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookShelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC701E581EAF476800D4EFCE /* BookShelfUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookShelfUITests.m; sourceTree = "<group>"; };
+		EC701E5A1EAF476800D4EFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC701E661EAF4A5A00D4EFCE /* SXBookShelfCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXBookShelfCell.h; sourceTree = "<group>"; };
+		EC701E671EAF4A5A00D4EFCE /* SXBookShelfCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXBookShelfCell.m; sourceTree = "<group>"; };
+		EC701E691EAF512200D4EFCE /* BookShelf-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookShelf-PrefixHeader.pch"; sourceTree = "<group>"; };
+		EC701E6A1EAF51A500D4EFCE /* UIColor+SXAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SXAdd.h"; sourceTree = "<group>"; };
+		EC701E6B1EAF51A500D4EFCE /* UIColor+SXAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SXAdd.m"; sourceTree = "<group>"; };
+		EC701EBB1EAF644C00D4EFCE /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
+		EC701EBD1EAF675600D4EFCE /* BookShelfHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfHeadView.h; sourceTree = "<group>"; };
+		EC701EBE1EAF675600D4EFCE /* BookShelfHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfHeadView.m; sourceTree = "<group>"; };
+		F379553AA307065F429C24D6 /* libPods-BookShelf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookShelf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC701E2D1EAF476800D4EFCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCF95D7CD0AD412BB89C39D /* libPods-BookShelf.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC701E461EAF476800D4EFCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC701E511EAF476800D4EFCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C3A9C045595BBAE085E630A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F379553AA307065F429C24D6 /* libPods-BookShelf.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA6704D893F6510E0B310E54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00D512A06A0366BE1E9E53BB /* Pods-BookShelf.debug.xcconfig */,
+				BD0D743C249A4F6DF7D4E080 /* Pods-BookShelf.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC701E271EAF476800D4EFCE = {
+			isa = PBXGroup;
+			children = (
+				EC701E321EAF476800D4EFCE /* BookShelf */,
+				EC701E4C1EAF476800D4EFCE /* BookShelfTests */,
+				EC701E571EAF476800D4EFCE /* BookShelfUITests */,
+				5C3A9C045595BBAE085E630A /* Frameworks */,
+				AA6704D893F6510E0B310E54 /* Pods */,
+				EC701E311EAF476800D4EFCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC701E311EAF476800D4EFCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E301EAF476800D4EFCE /* BookShelf.app */,
+				EC701E491EAF476800D4EFCE /* BookShelfTests.xctest */,
+				EC701E541EAF476800D4EFCE /* BookShelfUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC701E321EAF476800D4EFCE /* BookShelf */ = {
+			isa = PBXGroup;
+			children = (
+				EC701EBB1EAF644C00D4EFCE /* testImage.png */,
+				EC701EBA1EAF629300D4EFCE /* View */,
+				EC701EB91EAF628800D4EFCE /* Controller */,
+				EC701E6D1EAF544600D4EFCE /* Category */,
+				EC701E331EAF476800D4EFCE /* Supporting Files */,
+				EC701E361EAF476800D4EFCE /* AppDelegate.h */,
+				EC701E371EAF476800D4EFCE /* AppDelegate.m */,
+				EC701E3F1EAF476800D4EFCE /* Assets.xcassets */,
+				EC701E691EAF512200D4EFCE /* BookShelf-PrefixHeader.pch */,
+				EC701E441EAF476800D4EFCE /* Info.plist */,
+				EC701E411EAF476800D4EFCE /* LaunchScreen.storyboard */,
+				EC701E3C1EAF476800D4EFCE /* Main.storyboard */,
+			);
+			path = BookShelf;
+			sourceTree = "<group>";
+		};
+		EC701E331EAF476800D4EFCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E341EAF476800D4EFCE /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC701E4C1EAF476800D4EFCE /* BookShelfTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E4D1EAF476800D4EFCE /* BookShelfTests.m */,
+				EC701E4F1EAF476800D4EFCE /* Info.plist */,
+			);
+			path = BookShelfTests;
+			sourceTree = "<group>";
+		};
+		EC701E571EAF476800D4EFCE /* BookShelfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E581EAF476800D4EFCE /* BookShelfUITests.m */,
+				EC701E5A1EAF476800D4EFCE /* Info.plist */,
+			);
+			path = BookShelfUITests;
+			sourceTree = "<group>";
+		};
+		EC701E6D1EAF544600D4EFCE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E6A1EAF51A500D4EFCE /* UIColor+SXAdd.h */,
+				EC701E6B1EAF51A500D4EFCE /* UIColor+SXAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EC701EB91EAF628800D4EFCE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E391EAF476800D4EFCE /* ViewController.h */,
+				EC701E3A1EAF476800D4EFCE /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EC701EBA1EAF629300D4EFCE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E661EAF4A5A00D4EFCE /* SXBookShelfCell.h */,
+				EC701E671EAF4A5A00D4EFCE /* SXBookShelfCell.m */,
+				EC701EBD1EAF675600D4EFCE /* BookShelfHeadView.h */,
+				EC701EBE1EAF675600D4EFCE /* BookShelfHeadView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC701E2F1EAF476800D4EFCE /* BookShelf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC701E5D1EAF476800D4EFCE /* Build configuration list for PBXNativeTarget "BookShelf" */;
+			buildPhases = (
+				5C1DB217F32EA48F61080430 /* [CP] Check Pods Manifest.lock */,
+				EC701E2C1EAF476800D4EFCE /* Sources */,
+				EC701E2D1EAF476800D4EFCE /* Frameworks */,
+				EC701E2E1EAF476800D4EFCE /* Resources */,
+				80E2CEB202025F31D559CE7E /* [CP] Embed Pods Frameworks */,
+				053C6DD1BDBE4D73D195F950 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookShelf;
+			productName = BookShelf;
+			productReference = EC701E301EAF476800D4EFCE /* BookShelf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC701E481EAF476800D4EFCE /* BookShelfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC701E601EAF476800D4EFCE /* Build configuration list for PBXNativeTarget "BookShelfTests" */;
+			buildPhases = (
+				EC701E451EAF476800D4EFCE /* Sources */,
+				EC701E461EAF476800D4EFCE /* Frameworks */,
+				EC701E471EAF476800D4EFCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC701E4B1EAF476800D4EFCE /* PBXTargetDependency */,
+			);
+			name = BookShelfTests;
+			productName = BookShelfTests;
+			productReference = EC701E491EAF476800D4EFCE /* BookShelfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC701E531EAF476800D4EFCE /* BookShelfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC701E631EAF476800D4EFCE /* Build configuration list for PBXNativeTarget "BookShelfUITests" */;
+			buildPhases = (
+				EC701E501EAF476800D4EFCE /* Sources */,
+				EC701E511EAF476800D4EFCE /* Frameworks */,
+				EC701E521EAF476800D4EFCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC701E561EAF476800D4EFCE /* PBXTargetDependency */,
+			);
+			name = BookShelfUITests;
+			productName = BookShelfUITests;
+			productReference = EC701E541EAF476800D4EFCE /* BookShelfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC701E281EAF476800D4EFCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = tangyuhua;
+				TargetAttributes = {
+					EC701E2F1EAF476800D4EFCE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4BADWEEE97;
+						ProvisioningStyle = Automatic;
+					};
+					EC701E481EAF476800D4EFCE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4BADWEEE97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC701E2F1EAF476800D4EFCE;
+					};
+					EC701E531EAF476800D4EFCE = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4BADWEEE97;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC701E2F1EAF476800D4EFCE;
+					};
+				};
+			};
+			buildConfigurationList = EC701E2B1EAF476800D4EFCE /* Build configuration list for PBXProject "BookShelf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC701E271EAF476800D4EFCE;
+			productRefGroup = EC701E311EAF476800D4EFCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC701E2F1EAF476800D4EFCE /* BookShelf */,
+				EC701E481EAF476800D4EFCE /* BookShelfTests */,
+				EC701E531EAF476800D4EFCE /* BookShelfUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC701E2E1EAF476800D4EFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC701E431EAF476800D4EFCE /* LaunchScreen.storyboard in Resources */,
+				EC701EBC1EAF644C00D4EFCE /* testImage.png in Resources */,
+				EC701E401EAF476800D4EFCE /* Assets.xcassets in Resources */,
+				EC701E3E1EAF476800D4EFCE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC701E471EAF476800D4EFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC701E521EAF476800D4EFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		053C6DD1BDBE4D73D195F950 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C1DB217F32EA48F61080430 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80E2CEB202025F31D559CE7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC701E2C1EAF476800D4EFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC701EBF1EAF675600D4EFCE /* BookShelfHeadView.m in Sources */,
+				EC701E681EAF4A5A00D4EFCE /* SXBookShelfCell.m in Sources */,
+				EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */,
+				EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */,
+				EC701E351EAF476800D4EFCE /* main.m in Sources */,
+				EC701E6C1EAF51A500D4EFCE /* UIColor+SXAdd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC701E451EAF476800D4EFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC701E4E1EAF476800D4EFCE /* BookShelfTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC701E501EAF476800D4EFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC701E591EAF476800D4EFCE /* BookShelfUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC701E4B1EAF476800D4EFCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC701E2F1EAF476800D4EFCE /* BookShelf */;
+			targetProxy = EC701E4A1EAF476800D4EFCE /* PBXContainerItemProxy */;
+		};
+		EC701E561EAF476800D4EFCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC701E2F1EAF476800D4EFCE /* BookShelf */;
+			targetProxy = EC701E551EAF476800D4EFCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC701E3C1EAF476800D4EFCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC701E3D1EAF476800D4EFCE /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		EC701E411EAF476800D4EFCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC701E421EAF476800D4EFCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC701E5B1EAF476800D4EFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC701E5C1EAF476800D4EFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC701E5E1EAF476800D4EFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D512A06A0366BE1E9E53BB /* Pods-BookShelf.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BookShelf-PrefixHeader.pch";
+				INFOPLIST_FILE = BookShelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC701E5F1EAF476800D4EFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0D743C249A4F6DF7D4E080 /* Pods-BookShelf.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BookShelf-PrefixHeader.pch";
+				INFOPLIST_FILE = BookShelf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC701E611EAF476800D4EFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = BookShelfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookShelf.app/BookShelf";
+			};
+			name = Debug;
+		};
+		EC701E621EAF476800D4EFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = BookShelfTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelfTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookShelf.app/BookShelf";
+			};
+			name = Release;
+		};
+		EC701E641EAF476800D4EFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = BookShelfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BookShelf;
+			};
+			name = Debug;
+		};
+		EC701E651EAF476800D4EFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 4BADWEEE97;
+				INFOPLIST_FILE = BookShelfUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelfUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BookShelf;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC701E2B1EAF476800D4EFCE /* Build configuration list for PBXProject "BookShelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC701E5B1EAF476800D4EFCE /* Debug */,
+				EC701E5C1EAF476800D4EFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC701E5D1EAF476800D4EFCE /* Build configuration list for PBXNativeTarget "BookShelf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC701E5E1EAF476800D4EFCE /* Debug */,
+				EC701E5F1EAF476800D4EFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC701E601EAF476800D4EFCE /* Build configuration list for PBXNativeTarget "BookShelfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC701E611EAF476800D4EFCE /* Debug */,
+				EC701E621EAF476800D4EFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC701E631EAF476800D4EFCE /* Build configuration list for PBXNativeTarget "BookShelfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC701E641EAF476800D4EFCE /* Debug */,
+				EC701E651EAF476800D4EFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC701E281EAF476800D4EFCE /* Project object */;
+}
