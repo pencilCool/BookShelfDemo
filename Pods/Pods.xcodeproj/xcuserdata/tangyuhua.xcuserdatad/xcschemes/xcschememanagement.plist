@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BlocksKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0AC55E754182E1FCF070AC7F74379523</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2F7168D7188F839D18297638869FDCC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>63B8DEE2F52531813FE1D96135EBA5C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AF00C836E6331C12DE7B3F33BF05C625</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E1E4A258EB330CF16C4F807813B3F0D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

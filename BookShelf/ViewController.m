@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SXBookShelfCell.h"
 #import "BookShelfHeadView.h"
-
+#import "ReadViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)  BookShelfHeadView *headView;
 @property (nonatomic, strong)  UITableView *tableView;
@@ -49,6 +49,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ReadViewController *read = [ReadViewController new];
+    [self.navigationController pushViewController:read animated:YES];
+
+    
 }
 
 

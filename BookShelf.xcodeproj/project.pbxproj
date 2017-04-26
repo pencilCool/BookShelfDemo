@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9FCF95D7CD0AD412BB89C39D /* libPods-BookShelf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F379553AA307065F429C24D6 /* libPods-BookShelf.a */; };
+		EC1D59D71EB084A7002AE988 /* ReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59D61EB084A7002AE988 /* ReadViewController.m */; };
+		EC1D59DD1EB091C9002AE988 /* UIView+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59DC1EB091C9002AE988 /* UIView+NIB.m */; };
+		EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59DF1EB0923D002AE988 /* SXReadBottomBar.m */; };
+		EC1D59E21EB0924E002AE988 /* SXReadBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1D59E11EB0924E002AE988 /* SXReadBottomBar.xib */; };
+		EC1D59E51EB0959F002AE988 /* SXReadTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59E41EB0959F002AE988 /* SXReadTopBar.m */; };
+		EC1D59E71EB095B8002AE988 /* SXReadTopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */; };
 		EC701E351EAF476800D4EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E341EAF476800D4EFCE /* main.m */; };
 		EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E371EAF476800D4EFCE /* AppDelegate.m */; };
 		EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E3A1EAF476800D4EFCE /* ViewController.m */; };
@@ -42,6 +48,16 @@
 /* Begin PBXFileReference section */
 		00D512A06A0366BE1E9E53BB /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0D743C249A4F6DF7D4E080 /* Pods-BookShelf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.release.xcconfig"; sourceTree = "<group>"; };
+		EC1D59D51EB084A7002AE988 /* ReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadViewController.h; sourceTree = "<group>"; };
+		EC1D59D61EB084A7002AE988 /* ReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadViewController.m; sourceTree = "<group>"; };
+		EC1D59DB1EB091C9002AE988 /* UIView+NIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NIB.h"; sourceTree = "<group>"; };
+		EC1D59DC1EB091C9002AE988 /* UIView+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NIB.m"; sourceTree = "<group>"; };
+		EC1D59DE1EB0923D002AE988 /* SXReadBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReadBottomBar.h; sourceTree = "<group>"; };
+		EC1D59DF1EB0923D002AE988 /* SXReadBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXReadBottomBar.m; sourceTree = "<group>"; };
+		EC1D59E11EB0924E002AE988 /* SXReadBottomBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXReadBottomBar.xib; sourceTree = "<group>"; };
+		EC1D59E31EB0959F002AE988 /* SXReadTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReadTopBar.h; sourceTree = "<group>"; };
+		EC1D59E41EB0959F002AE988 /* SXReadTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXReadTopBar.m; sourceTree = "<group>"; };
+		EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXReadTopBar.xib; sourceTree = "<group>"; };
 		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -182,6 +198,8 @@
 		EC701E6D1EAF544600D4EFCE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EC1D59DB1EB091C9002AE988 /* UIView+NIB.h */,
+				EC1D59DC1EB091C9002AE988 /* UIView+NIB.m */,
 				EC701E6A1EAF51A500D4EFCE /* UIColor+SXAdd.h */,
 				EC701E6B1EAF51A500D4EFCE /* UIColor+SXAdd.m */,
 			);
@@ -193,6 +211,8 @@
 			children = (
 				EC701E391EAF476800D4EFCE /* ViewController.h */,
 				EC701E3A1EAF476800D4EFCE /* ViewController.m */,
+				EC1D59D51EB084A7002AE988 /* ReadViewController.h */,
+				EC1D59D61EB084A7002AE988 /* ReadViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -204,6 +224,12 @@
 				EC701E671EAF4A5A00D4EFCE /* SXBookShelfCell.m */,
 				EC701EBD1EAF675600D4EFCE /* BookShelfHeadView.h */,
 				EC701EBE1EAF675600D4EFCE /* BookShelfHeadView.m */,
+				EC1D59DE1EB0923D002AE988 /* SXReadBottomBar.h */,
+				EC1D59DF1EB0923D002AE988 /* SXReadBottomBar.m */,
+				EC1D59E11EB0924E002AE988 /* SXReadBottomBar.xib */,
+				EC1D59E31EB0959F002AE988 /* SXReadTopBar.h */,
+				EC1D59E41EB0959F002AE988 /* SXReadTopBar.m */,
+				EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -320,6 +346,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1D59E71EB095B8002AE988 /* SXReadTopBar.xib in Resources */,
+				EC1D59E21EB0924E002AE988 /* SXReadBottomBar.xib in Resources */,
 				EC701E431EAF476800D4EFCE /* LaunchScreen.storyboard in Resources */,
 				EC701EBC1EAF644C00D4EFCE /* testImage.png in Resources */,
 				EC701E401EAF476800D4EFCE /* Assets.xcassets in Resources */,
@@ -397,9 +425,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC701EBF1EAF675600D4EFCE /* BookShelfHeadView.m in Sources */,
+				EC1D59D71EB084A7002AE988 /* ReadViewController.m in Sources */,
 				EC701E681EAF4A5A00D4EFCE /* SXBookShelfCell.m in Sources */,
 				EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */,
+				EC1D59E51EB0959F002AE988 /* SXReadTopBar.m in Sources */,
 				EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */,
+				EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */,
+				EC1D59DD1EB091C9002AE988 /* UIView+NIB.m in Sources */,
 				EC701E351EAF476800D4EFCE /* main.m in Sources */,
 				EC701E6C1EAF51A500D4EFCE /* UIColor+SXAdd.m in Sources */,
 			);

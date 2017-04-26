@@ -11,4 +11,7 @@
 #import "UIColor+SXAdd.h"
 #import <YYKit.h>
 #import <Masonry.h>
+#import <BlocksKit.h>
+#import <BlocksKit+UIKit.h>
+#import "UIView+NIB.h"
 #endif
