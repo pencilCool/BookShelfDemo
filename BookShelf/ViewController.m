@@ -19,8 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = YES;
     [self.view addSubview:self.tableView];
-    
     
 }
 
@@ -33,7 +33,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 12;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,7 +71,8 @@
 - (BookShelfHeadView *)headView
 {
     if (!_headView) {
-        _headView = [BookShelfHeadView new];
+        CGRect frame =  CGRectMake(0, 0, kScreenWidth, kScreenWidth * 0.6);
+        _headView = [[BookShelfHeadView alloc] initWithFrame:frame];
     }
     return _headView;
 }

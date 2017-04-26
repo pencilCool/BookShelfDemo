@@ -9,14 +9,20 @@
 #import "SXBookShelfCell.h"
 
 @implementation SXBookShelfCell
+{
+    BOOL isConstrainsAdded;
+}
 
 
 - (instancetype) initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
+        isConstrainsAdded = NO;
+        self.contentView.translatesAutoresizingMaskIntoConstraints = NO;
         [self configSubView];
         [self configLayout];
+       
     }
     return  self;
 }
@@ -74,7 +80,6 @@
     if (!_nameLabel) {
         _nameLabel = [UILabel new];
         [_nameLabel sizeToFit];
-        _nameLabel.translatesAutoresizingMaskIntoConstraints = NO;
     }
     return _nameLabel;
 }
@@ -85,7 +90,7 @@
     if (!_authorLabel) {
         _authorLabel = [UILabel new];
         [_authorLabel sizeToFit];
-        _authorLabel.translatesAutoresizingMaskIntoConstraints = NO;
+      
     }
     return _authorLabel;
 }
@@ -95,13 +100,26 @@
     if (!_progressLabel) {
         _progressLabel = [UILabel new];
         [_progressLabel sizeToFit];
-        _progressLabel.translatesAutoresizingMaskIntoConstraints = NO;
+       // _progressLabel.translatesAutoresizingMaskIntoConstraints = NO;
     }
     return _progressLabel;
 }
 
+- (void)layoutSubviews {
+    
+//    if (!isConstrainsAdded) {
+//        
+//        isConstrainsAdded = YES;
+//    }
+    
+    [super layoutSubviews];
+}
 
-
+- (void)updateConstraints{
+    
+    [super updateConstraints];
+ 
+}
 
 
 
