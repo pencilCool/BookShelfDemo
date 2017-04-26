@@ -10,7 +10,8 @@
 #import "SXReadBottomBar.h"
 #import "SXReadTopBar.h"
 @interface ReadViewController ()
-
+@property (nonatomic, strong) SXReadBottomBar *bottomBar;
+@property (nonatomic,strong)  SXReadTopBar    *topBar;
 @end
 
 @implementation ReadViewController
@@ -18,14 +19,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
     
     [self.tabBarController.tabBar setHidden:YES];
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
 
+    
     [self.view bk_whenTapped:^{
-        [self showToolBar];
+        if (self.topBar && self.bottomBar) {
+            [self hiddenToolBar];
+     
+        }else {
+            [self showToolBar];
+        }
     }];
+    
+    
+    
+    
 
 }
 
@@ -37,24 +48,38 @@
 
 - (void)showToolBar {
     
+
     
-    SXReadBottomBar *bottomBar = [SXReadBottomBar createViewFromNib];
-    [self.view addSubview:bottomBar];
-    bottomBar.frame = CGRectMake(0,self.view.height,self.view.width,44);
+    self.topBar = [SXReadTopBar createViewFromNib];
+    [self.view addSubview:self.topBar];
+    self.topBar.frame = CGRectMake(0, -64, self.view.width, 64);
+    
+    
+    self.bottomBar = [SXReadBottomBar createViewFromNib];
+    [self.view addSubview:self.bottomBar];
+    self.bottomBar.frame = CGRectMake(0,self.view.height,self.view.width,49);
+
+    
+    
+    
     [UIView animateWithDuration:0.2 animations:^{
-        bottomBar.frame = CGRectMake(0,self.view.height - 44,self.view.width,44);
+        self.topBar.frame = CGRectMake(0, 0, self.view.width, 64);
+        self.bottomBar.frame = CGRectMake(0,self.view.height - 49,self.view.width,49);
+
     }];
-    
-    
-    SXReadTopBar  *topBar = [SXReadTopBar createViewFromNib];
-    [self.view addSubview:topBar];
-    topBar.frame = CGRectMake(0, -64, self.view.width, 44);
-    
+
+}
+
+- (void)hiddenToolBar {
     [UIView animateWithDuration:0.2 animations:^{
-        topBar.frame = CGRectMake(0, 20, self.view.width, 44);
+        self.topBar.frame = CGRectMake(0, -64, self.view.width, 64);
+        self.bottomBar.frame = CGRectMake(0,self.view.height,self.view.width,49);
+
+    }completion:^(BOOL finished) {
+        [self.bottomBar removeFromSuperview];
+        self.bottomBar = nil;
+        [self.topBar   removeFromSuperview];
+        self.topBar = nil;
     }];
-    
-    
-    
 }
 @end
