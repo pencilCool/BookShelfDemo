@@ -9,7 +9,7 @@
 #import "ReadViewController.h"
 #import "SXReadBottomBar.h"
 #import "SXReadTopBar.h"
-@interface ReadViewController ()
+@interface ReadViewController ()<SXReadTapToolBarDelegate>
 @property (nonatomic, strong) SXReadBottomBar *bottomBar;
 @property (nonatomic,strong)  SXReadTopBar    *topBar;
 @end
@@ -20,23 +20,16 @@
     [super viewDidLoad];
    
     self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
-    
     [self.tabBarController.tabBar setHidden:YES];
     [[self navigationController] setNavigationBarHidden:YES animated:YES];
-
     
     [self.view bk_whenTapped:^{
         if (self.topBar && self.bottomBar) {
             [self hiddenToolBar];
-     
         }else {
             [self showToolBar];
         }
     }];
-    
-    
-    
-    
 
 }
 
@@ -46,11 +39,65 @@
 }
 
 
-- (void)showToolBar {
-    
 
-    
+#pragma  mark - SXReadTapToolBarDelegate
+- (void)readerTopToolBar:(SXReadTopBar *)readerToolBar didClickedAction:(SXReadTapToolBarAction)action
+{
+    switch (action) {
+        case SXReadTapToolBarActionBack:
+            [self.navigationController popViewControllerAnimated:YES];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- (void)showToolBar {
     self.topBar = [SXReadTopBar createViewFromNib];
+    self.topBar.delegate = self;
     [self.view addSubview:self.topBar];
     self.topBar.frame = CGRectMake(0, -64, self.view.width, 64);
     
@@ -59,8 +106,6 @@
     [self.view addSubview:self.bottomBar];
     self.bottomBar.frame = CGRectMake(0,self.view.height,self.view.width,49);
 
-    
-    
     
     [UIView animateWithDuration:0.2 animations:^{
         self.topBar.frame = CGRectMake(0, 0, self.view.width, 64);
@@ -71,6 +116,7 @@
 }
 
 - (void)hiddenToolBar {
+    
     [UIView animateWithDuration:0.2 animations:^{
         self.topBar.frame = CGRectMake(0, -64, self.view.width, 64);
         self.bottomBar.frame = CGRectMake(0,self.view.height,self.view.width,49);

@@ -8,6 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class SXReadTopBar;
+
+typedef NS_ENUM(NSUInteger, SXReadTapToolBarAction) {
+    SXReadTapToolBarActionBack,
+    SXReadTapToolBarActionListen,
+    SXReadTapToolBarActionDownLoad,
+    SXReadTapToolBarActionReward,
+    SXReadTapToolBarActionMore,
+};
+
+@protocol SXReadTapToolBarDelegate <NSObject>
+- (void)readerTopToolBar:(SXReadTopBar *)readerToolBar didClickedAction:(SXReadTapToolBarAction)action;
+@end
+
 @interface SXReadTopBar : UIView
+
+
+@property (nonatomic, weak) id<SXReadTapToolBarDelegate>delegate;
 
 @end

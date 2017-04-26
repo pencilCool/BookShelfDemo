@@ -8,7 +8,32 @@
 
 #import "SXReadTopBar.h"
 
+@interface SXReadTopBar()
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *actionButtons;
+
+@end
+
+
 @implementation SXReadTopBar
+
+
+
+
+
+
+- (IBAction)topBarActions:(id)sender {
+
+    SXReadTapToolBarAction actionType;
+    actionType =  [self.actionButtons indexOfObject:sender];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(readerTopToolBar:didClickedAction:)]) {
+        [self.delegate readerTopToolBar:self didClickedAction:actionType];
+    }
+    
+}
+
+
+
 
 
 @end
