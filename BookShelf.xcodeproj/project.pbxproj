@@ -15,6 +15,8 @@
 		EC1D59E51EB0959F002AE988 /* SXReadTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59E41EB0959F002AE988 /* SXReadTopBar.m */; };
 		EC1D59E71EB095B8002AE988 /* SXReadTopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */; };
 		EC3785111EB187AC00E8B6F5 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3785101EB187AC00E8B6F5 /* DownLoadViewController.m */; };
+		EC37851A1EB18DF200E8B6F5 /* Read.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3785181EB18DF200E8B6F5 /* Read.storyboard */; };
+		EC37851C1EB1920700E8B6F5 /* DownLoad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37851B1EB1920700E8B6F5 /* DownLoad.storyboard */; };
 		EC701E351EAF476800D4EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E341EAF476800D4EFCE /* main.m */; };
 		EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E371EAF476800D4EFCE /* AppDelegate.m */; };
 		EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E3A1EAF476800D4EFCE /* ViewController.m */; };
@@ -61,6 +63,8 @@
 		EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXReadTopBar.xib; sourceTree = "<group>"; };
 		EC37850F1EB187AC00E8B6F5 /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
 		EC3785101EB187AC00E8B6F5 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		EC3785191EB18DF200E8B6F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Read.storyboard; sourceTree = "<group>"; };
+		EC37851B1EB1920700E8B6F5 /* DownLoad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DownLoad.storyboard; sourceTree = "<group>"; };
 		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +135,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC3785141EB18CBE00E8B6F5 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EC701E3C1EAF476800D4EFCE /* Main.storyboard */,
+				EC3785181EB18DF200E8B6F5 /* Read.storyboard */,
+				EC37851B1EB1920700E8B6F5 /* DownLoad.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
 		EC701E271EAF476800D4EFCE = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +181,6 @@
 				EC701E691EAF512200D4EFCE /* BookShelf-PrefixHeader.pch */,
 				EC701E441EAF476800D4EFCE /* Info.plist */,
 				EC701E411EAF476800D4EFCE /* LaunchScreen.storyboard */,
-				EC701E3C1EAF476800D4EFCE /* Main.storyboard */,
 			);
 			path = BookShelf;
 			sourceTree = "<group>";
@@ -235,6 +248,7 @@
 				EC1D59E31EB0959F002AE988 /* SXReadTopBar.h */,
 				EC1D59E41EB0959F002AE988 /* SXReadTopBar.m */,
 				EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */,
+				EC3785141EB18CBE00E8B6F5 /* StoryBoard */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -352,6 +366,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1D59E71EB095B8002AE988 /* SXReadTopBar.xib in Resources */,
+				EC37851A1EB18DF200E8B6F5 /* Read.storyboard in Resources */,
+				EC37851C1EB1920700E8B6F5 /* DownLoad.storyboard in Resources */,
 				EC1D59E21EB0924E002AE988 /* SXReadBottomBar.xib in Resources */,
 				EC701E431EAF476800D4EFCE /* LaunchScreen.storyboard in Resources */,
 				EC701EBC1EAF644C00D4EFCE /* testImage.png in Resources */,
@@ -475,6 +491,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		EC3785181EB18DF200E8B6F5 /* Read.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC3785191EB18DF200E8B6F5 /* Base */,
+			);
+			name = Read.storyboard;
+			sourceTree = "<group>";
+		};
 		EC701E3C1EAF476800D4EFCE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

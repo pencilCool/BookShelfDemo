@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"批量下载";
+    //[self.navigationController setNavigationBarHidden:NO animated:NO];
     
     
 }

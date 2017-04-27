@@ -49,12 +49,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    ReadViewController *read = [ReadViewController new];
-    [self.navigationController pushViewController:read animated:YES];
-
-    
+    [self performSegueWithIdentifier:@"MainCellTaped" sender:self];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+}
 
 
 - (UITableView *)tableView

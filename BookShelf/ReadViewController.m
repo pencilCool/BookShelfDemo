@@ -21,8 +21,8 @@
     [super viewDidLoad];
    
     self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
-    [self.tabBarController.tabBar setHidden:YES];
-    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+//    [self.tabBarController.tabBar setHidden:YES];
+//    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     
     [self.view bk_whenTapped:^{
         if (self.topBar && self.bottomBar) {
@@ -50,8 +50,7 @@
             break;
         case SXReadTapToolBarActionDownLoad:
         {
-            DownLoadViewController *downLoad = [DownLoadViewController new];
-            [self.navigationController pushViewController:downLoad animated:YES];
+            [self performSegueWithIdentifier:@"DownLoad" sender:self];
         }
             
         default:
