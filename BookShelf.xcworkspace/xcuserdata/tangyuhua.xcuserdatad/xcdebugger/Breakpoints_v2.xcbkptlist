@@ -84,23 +84,15 @@
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
-            continueAfterRunningActions = "Yes"
-            filePath = "BookShelf/ReadViewController.m"
-            timestampString = "514894829.853576"
+            continueAfterRunningActions = "No"
+            filePath = "BookShelf/SXReadTopBar.m"
+            timestampString = "514949955.711141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "-readerTopToolBar:didClickedAction:"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-topBarActions:"
             landmarkType = "7">
-            <Actions>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "po action">
-                  </ActionContent>
-               </BreakpointActionProxy>
-            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

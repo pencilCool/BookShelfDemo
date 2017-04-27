@@ -9,6 +9,7 @@
 #import "ReadViewController.h"
 #import "SXReadBottomBar.h"
 #import "SXReadTopBar.h"
+#import "DownLoadViewController.h"
 @interface ReadViewController ()<SXReadTapToolBarDelegate>
 @property (nonatomic, strong) SXReadBottomBar *bottomBar;
 @property (nonatomic,strong)  SXReadTopBar    *topBar;
@@ -47,6 +48,11 @@
         case SXReadTapToolBarActionBack:
             [self.navigationController popViewControllerAnimated:YES];
             break;
+        case SXReadTapToolBarActionDownLoad:
+        {
+            DownLoadViewController *downLoad = [DownLoadViewController new];
+            [self.navigationController pushViewController:downLoad animated:YES];
+        }
             
         default:
             break;

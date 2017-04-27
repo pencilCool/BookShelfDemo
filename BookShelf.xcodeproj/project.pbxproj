@@ -14,6 +14,7 @@
 		EC1D59E21EB0924E002AE988 /* SXReadBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1D59E11EB0924E002AE988 /* SXReadBottomBar.xib */; };
 		EC1D59E51EB0959F002AE988 /* SXReadTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59E41EB0959F002AE988 /* SXReadTopBar.m */; };
 		EC1D59E71EB095B8002AE988 /* SXReadTopBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */; };
+		EC3785111EB187AC00E8B6F5 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3785101EB187AC00E8B6F5 /* DownLoadViewController.m */; };
 		EC701E351EAF476800D4EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E341EAF476800D4EFCE /* main.m */; };
 		EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E371EAF476800D4EFCE /* AppDelegate.m */; };
 		EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E3A1EAF476800D4EFCE /* ViewController.m */; };
@@ -58,6 +59,8 @@
 		EC1D59E31EB0959F002AE988 /* SXReadTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReadTopBar.h; sourceTree = "<group>"; };
 		EC1D59E41EB0959F002AE988 /* SXReadTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXReadTopBar.m; sourceTree = "<group>"; };
 		EC1D59E61EB095B8002AE988 /* SXReadTopBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXReadTopBar.xib; sourceTree = "<group>"; };
+		EC37850F1EB187AC00E8B6F5 /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		EC3785101EB187AC00E8B6F5 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
 		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -213,6 +216,8 @@
 				EC701E3A1EAF476800D4EFCE /* ViewController.m */,
 				EC1D59D51EB084A7002AE988 /* ReadViewController.h */,
 				EC1D59D61EB084A7002AE988 /* ReadViewController.m */,
+				EC37850F1EB187AC00E8B6F5 /* DownLoadViewController.h */,
+				EC3785101EB187AC00E8B6F5 /* DownLoadViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 				EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */,
 				EC1D59DD1EB091C9002AE988 /* UIView+NIB.m in Sources */,
 				EC701E351EAF476800D4EFCE /* main.m in Sources */,
+				EC3785111EB187AC00E8B6F5 /* DownLoadViewController.m in Sources */,
 				EC701E6C1EAF51A500D4EFCE /* UIColor+SXAdd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
