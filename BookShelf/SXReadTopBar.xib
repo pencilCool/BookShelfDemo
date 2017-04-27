@@ -84,6 +84,13 @@
                 <constraint firstItem="c6T-42-sV9" firstAttribute="leading" secondItem="kds-6b-xYH" secondAttribute="leading" constant="20" id="Ykq-Zg-vEg"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="actionButtons" destination="c6T-42-sV9" id="c5V-yu-Ojs"/>
+                <outletCollection property="actionButtons" destination="bsO-78-bfd" id="5AJ-Rc-axU"/>
+                <outletCollection property="actionButtons" destination="2Jf-rh-xbY" id="yR2-lR-MPV"/>
+                <outletCollection property="actionButtons" destination="DER-cz-GKO" id="Rao-nq-FNz"/>
+                <outletCollection property="actionButtons" destination="wai-Pe-qjg" id="gW0-PJ-NBe"/>
+            </connections>
             <point key="canvasLocation" x="-560.5" y="-298"/>
         </view>
     </objects>

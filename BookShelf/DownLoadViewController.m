@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.title = @"批量下载";
     
+    
 }
 
 - (void)didReceiveMemoryWarning {
