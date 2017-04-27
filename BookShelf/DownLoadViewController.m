@@ -7,8 +7,11 @@
 //
 
 #import "DownLoadViewController.h"
+#import "DownLoadCell.h"
+@interface DownLoadViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@interface DownLoadViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
 
@@ -16,15 +19,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self.navigationController setNavigationBarHidden:NO animated:NO];
-    
-    
+  
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section  {
+    return 2;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    DownLoadCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DownLoadCell" forIndexPath:indexPath];
+    cell.textLabel.text = @"第一章";
+    return cell;
+}
+
+
 
 - (IBAction)back:(UIBarButtonItem *)sender {
     [self.navigationController popViewControllerAnimated:YES];
