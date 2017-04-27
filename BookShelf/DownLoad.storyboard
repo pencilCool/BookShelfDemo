@@ -21,19 +21,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcF-3L-LZ9">
-                                <rect key="frame" x="0.0" y="-2" width="375" height="74"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcF-3L-LZ9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="sa1-Rb-7zW"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="批量下载" prompt="  " id="qwL-MJ-fbo">
                                         <barButtonItem key="backBarButtonItem" title="返回" id="hSm-rb-pyg"/>
-                                        <barButtonItem key="leftBarButtonItem" title="返回" id="yGs-Bo-rUm"/>
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="yGs-Bo-rUm">
+                                            <connections>
+                                                <action selector="back:" destination="Xag-hb-1St" id="Mco-Wm-Ovw"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="全选" id="eww-dj-4wv"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dgU-EL-RuO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lcF-3L-LZ9" firstAttribute="top" secondItem="09J-K8-Hnk" secondAttribute="top" id="WKc-3f-ZnA"/>
+                            <constraint firstItem="dgU-EL-RuO" firstAttribute="leading" secondItem="09J-K8-Hnk" secondAttribute="leading" id="ahM-ND-g8c"/>
+                            <constraint firstItem="C45-XI-nBY" firstAttribute="top" secondItem="dgU-EL-RuO" secondAttribute="bottom" id="jKr-KT-4TN"/>
+                            <constraint firstAttribute="trailing" secondItem="lcF-3L-LZ9" secondAttribute="trailing" id="kn0-6e-8s9"/>
+                            <constraint firstItem="lcF-3L-LZ9" firstAttribute="leading" secondItem="09J-K8-Hnk" secondAttribute="leading" id="vNZ-iy-IpG"/>
+                            <constraint firstItem="dgU-EL-RuO" firstAttribute="top" secondItem="lcF-3L-LZ9" secondAttribute="bottom" id="xxg-hR-x3o"/>
+                            <constraint firstAttribute="trailing" secondItem="dgU-EL-RuO" secondAttribute="trailing" id="zVW-qU-R0X"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y65-q8-Jff" userLabel="First Responder" sceneMemberID="firstResponder"/>
