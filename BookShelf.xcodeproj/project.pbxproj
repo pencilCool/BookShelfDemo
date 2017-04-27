@@ -18,8 +18,8 @@
 		EC37851A1EB18DF200E8B6F5 /* Read.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3785181EB18DF200E8B6F5 /* Read.storyboard */; };
 		EC37851C1EB1920700E8B6F5 /* DownLoad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC37851B1EB1920700E8B6F5 /* DownLoad.storyboard */; };
 		EC37851F1EB19F6000E8B6F5 /* DownLoadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37851E1EB19F6000E8B6F5 /* DownLoadCell.m */; };
-		EC3785231EB1BE0C00E8B6F5 /* 第1章.qrt in Resources */ = {isa = PBXBuildFile; fileRef = EC3785211EB1BE0C00E8B6F5 /* 第1章.qrt */; };
-		EC3785241EB1BE0C00E8B6F5 /* 第2章.qrt in Resources */ = {isa = PBXBuildFile; fileRef = EC3785221EB1BE0C00E8B6F5 /* 第2章.qrt */; };
+		EC3785261EB1C28300E8B6F5 /* 第2章.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC3785251EB1C28300E8B6F5 /* 第2章.txt */; };
+		EC3785281EB1C2C800E8B6F5 /* 第1章.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC3785271EB1C2C800E8B6F5 /* 第1章.txt */; };
 		EC701E351EAF476800D4EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E341EAF476800D4EFCE /* main.m */; };
 		EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E371EAF476800D4EFCE /* AppDelegate.m */; };
 		EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E3A1EAF476800D4EFCE /* ViewController.m */; };
@@ -70,8 +70,8 @@
 		EC37851B1EB1920700E8B6F5 /* DownLoad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DownLoad.storyboard; sourceTree = "<group>"; };
 		EC37851D1EB19F6000E8B6F5 /* DownLoadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadCell.h; sourceTree = "<group>"; };
 		EC37851E1EB19F6000E8B6F5 /* DownLoadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadCell.m; sourceTree = "<group>"; };
-		EC3785211EB1BE0C00E8B6F5 /* 第1章.qrt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "第1章.qrt"; sourceTree = "<group>"; };
-		EC3785221EB1BE0C00E8B6F5 /* 第2章.qrt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "第2章.qrt"; sourceTree = "<group>"; };
+		EC3785251EB1C28300E8B6F5 /* 第2章.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "第2章.txt"; sourceTree = "<group>"; };
+		EC3785271EB1C2C800E8B6F5 /* 第1章.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "第1章.txt"; sourceTree = "<group>"; };
 		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,9 +155,9 @@
 		EC3785201EB1BDA400E8B6F5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				EC3785211EB1BE0C00E8B6F5 /* 第1章.qrt */,
-				EC3785221EB1BE0C00E8B6F5 /* 第2章.qrt */,
 				EC701EBB1EAF644C00D4EFCE /* testImage.png */,
+				EC3785251EB1C28300E8B6F5 /* 第2章.txt */,
+				EC3785271EB1C2C800E8B6F5 /* 第1章.txt */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -384,13 +384,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3785241EB1BE0C00E8B6F5 /* 第2章.qrt in Resources */,
 				EC1D59E71EB095B8002AE988 /* SXReadTopBar.xib in Resources */,
 				EC37851A1EB18DF200E8B6F5 /* Read.storyboard in Resources */,
+				EC3785281EB1C2C800E8B6F5 /* 第1章.txt in Resources */,
 				EC37851C1EB1920700E8B6F5 /* DownLoad.storyboard in Resources */,
+				EC3785261EB1C28300E8B6F5 /* 第2章.txt in Resources */,
 				EC1D59E21EB0924E002AE988 /* SXReadBottomBar.xib in Resources */,
 				EC701E431EAF476800D4EFCE /* LaunchScreen.storyboard in Resources */,
-				EC3785231EB1BE0C00E8B6F5 /* 第1章.qrt in Resources */,
 				EC701EBC1EAF644C00D4EFCE /* testImage.png in Resources */,
 				EC701E401EAF476800D4EFCE /* Assets.xcassets in Resources */,
 				EC701E3E1EAF476800D4EFCE /* Main.storyboard in Resources */,
