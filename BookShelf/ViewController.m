@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SXBookShelfCell.h"
 #import "BookShelfHeadView.h"
-#import "ReadViewController.h"
+#import "ReaderViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)  BookShelfHeadView *headView;
 @property (nonatomic, strong)  UITableView *tableView;

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9FCF95D7CD0AD412BB89C39D /* libPods-BookShelf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F379553AA307065F429C24D6 /* libPods-BookShelf.a */; };
-		EC1D59D71EB084A7002AE988 /* ReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59D61EB084A7002AE988 /* ReadViewController.m */; };
+		EC1D59D71EB084A7002AE988 /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59D61EB084A7002AE988 /* ReaderViewController.m */; };
 		EC1D59DD1EB091C9002AE988 /* UIView+NIB.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59DC1EB091C9002AE988 /* UIView+NIB.m */; };
 		EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1D59DF1EB0923D002AE988 /* SXReadBottomBar.m */; };
 		EC1D59E21EB0924E002AE988 /* SXReadBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC1D59E11EB0924E002AE988 /* SXReadBottomBar.xib */; };
@@ -20,6 +20,9 @@
 		EC37851F1EB19F6000E8B6F5 /* DownLoadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37851E1EB19F6000E8B6F5 /* DownLoadCell.m */; };
 		EC3785261EB1C28300E8B6F5 /* 第2章.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC3785251EB1C28300E8B6F5 /* 第2章.txt */; };
 		EC3785281EB1C2C800E8B6F5 /* 第1章.txt in Resources */ = {isa = PBXBuildFile; fileRef = EC3785271EB1C2C800E8B6F5 /* 第1章.txt */; };
+		EC37852B1EB1C88F00E8B6F5 /* ReaderTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37852A1EB1C88F00E8B6F5 /* ReaderTextController.m */; };
+		EC3785861EB2DA8E00E8B6F5 /* ReaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */; };
+		EC37858B1EB2DCAF00E8B6F5 /* ChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */; };
 		EC701E351EAF476800D4EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E341EAF476800D4EFCE /* main.m */; };
 		EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E371EAF476800D4EFCE /* AppDelegate.m */; };
 		EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E3A1EAF476800D4EFCE /* ViewController.m */; };
@@ -54,8 +57,8 @@
 /* Begin PBXFileReference section */
 		00D512A06A0366BE1E9E53BB /* Pods-BookShelf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0D743C249A4F6DF7D4E080 /* Pods-BookShelf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookShelf.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookShelf/Pods-BookShelf.release.xcconfig"; sourceTree = "<group>"; };
-		EC1D59D51EB084A7002AE988 /* ReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadViewController.h; sourceTree = "<group>"; };
-		EC1D59D61EB084A7002AE988 /* ReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadViewController.m; sourceTree = "<group>"; };
+		EC1D59D51EB084A7002AE988 /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
+		EC1D59D61EB084A7002AE988 /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
 		EC1D59DB1EB091C9002AE988 /* UIView+NIB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NIB.h"; sourceTree = "<group>"; };
 		EC1D59DC1EB091C9002AE988 /* UIView+NIB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NIB.m"; sourceTree = "<group>"; };
 		EC1D59DE1EB0923D002AE988 /* SXReadBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReadBottomBar.h; sourceTree = "<group>"; };
@@ -72,6 +75,12 @@
 		EC37851E1EB19F6000E8B6F5 /* DownLoadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadCell.m; sourceTree = "<group>"; };
 		EC3785251EB1C28300E8B6F5 /* 第2章.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "第2章.txt"; sourceTree = "<group>"; };
 		EC3785271EB1C2C800E8B6F5 /* 第1章.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "第1章.txt"; sourceTree = "<group>"; };
+		EC3785291EB1C88F00E8B6F5 /* ReaderTextController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderTextController.h; sourceTree = "<group>"; };
+		EC37852A1EB1C88F00E8B6F5 /* ReaderTextController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderTextController.m; sourceTree = "<group>"; };
+		EC3785841EB2DA8E00E8B6F5 /* ReaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderManager.h; sourceTree = "<group>"; };
+		EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderManager.m; sourceTree = "<group>"; };
+		EC3785891EB2DCAF00E8B6F5 /* ChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterModel.h; sourceTree = "<group>"; };
+		EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterModel.m; sourceTree = "<group>"; };
 		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -162,6 +171,17 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		EC3785881EB2DA9900E8B6F5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EC3785841EB2DA8E00E8B6F5 /* ReaderManager.h */,
+				EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */,
+				EC3785891EB2DCAF00E8B6F5 /* ChapterModel.h */,
+				EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
 		EC701E271EAF476800D4EFCE = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +209,7 @@
 			children = (
 				EC3785201EB1BDA400E8B6F5 /* Source */,
 				EC701EBA1EAF629300D4EFCE /* View */,
+				EC3785881EB2DA9900E8B6F5 /* Manager */,
 				EC701EB91EAF628800D4EFCE /* Controller */,
 				EC701E6D1EAF544600D4EFCE /* Category */,
 				EC701E331EAF476800D4EFCE /* Supporting Files */,
@@ -244,8 +265,10 @@
 			children = (
 				EC701E391EAF476800D4EFCE /* ViewController.h */,
 				EC701E3A1EAF476800D4EFCE /* ViewController.m */,
-				EC1D59D51EB084A7002AE988 /* ReadViewController.h */,
-				EC1D59D61EB084A7002AE988 /* ReadViewController.m */,
+				EC1D59D51EB084A7002AE988 /* ReaderViewController.h */,
+				EC1D59D61EB084A7002AE988 /* ReaderViewController.m */,
+				EC3785291EB1C88F00E8B6F5 /* ReaderTextController.h */,
+				EC37852A1EB1C88F00E8B6F5 /* ReaderTextController.m */,
 				EC37850F1EB187AC00E8B6F5 /* DownLoadViewController.h */,
 				EC3785101EB187AC00E8B6F5 /* DownLoadViewController.m */,
 			);
@@ -468,16 +491,19 @@
 			files = (
 				EC701EBF1EAF675600D4EFCE /* BookShelfHeadView.m in Sources */,
 				EC37851F1EB19F6000E8B6F5 /* DownLoadCell.m in Sources */,
-				EC1D59D71EB084A7002AE988 /* ReadViewController.m in Sources */,
+				EC1D59D71EB084A7002AE988 /* ReaderViewController.m in Sources */,
 				EC701E681EAF4A5A00D4EFCE /* SXBookShelfCell.m in Sources */,
 				EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */,
+				EC37858B1EB2DCAF00E8B6F5 /* ChapterModel.m in Sources */,
 				EC1D59E51EB0959F002AE988 /* SXReadTopBar.m in Sources */,
 				EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */,
 				EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */,
+				EC3785861EB2DA8E00E8B6F5 /* ReaderManager.m in Sources */,
 				EC1D59DD1EB091C9002AE988 /* UIView+NIB.m in Sources */,
 				EC701E351EAF476800D4EFCE /* main.m in Sources */,
 				EC3785111EB187AC00E8B6F5 /* DownLoadViewController.m in Sources */,
 				EC701E6C1EAF51A500D4EFCE /* UIColor+SXAdd.m in Sources */,
+				EC37852B1EB1C88F00E8B6F5 /* ReaderTextController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +666,7 @@
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BookShelf-PrefixHeader.pch";
 				INFOPLIST_FILE = BookShelf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -654,6 +681,7 @@
 				DEVELOPMENT_TEAM = 4BADWEEE97;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/BookShelf-PrefixHeader.pch";
 				INFOPLIST_FILE = BookShelf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangyuhua.com.BookShelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReadViewController : UIViewController
+@interface ReaderViewController : UIViewController
 
 @end

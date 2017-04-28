@@ -6,31 +6,29 @@
 //  Copyright © 2017年 tangyuhua. All rights reserved.
 //
 
-#import "ReadViewController.h"
+#import "ReaderViewController.h"
 #import "SXReadBottomBar.h"
 #import "SXReadTopBar.h"
 #import "DownLoadViewController.h"
-@interface ReadViewController ()<SXReadTapToolBarDelegate>
+
+#import "ReaderTextController.h"
+@interface ReaderViewController ()<SXReadTapToolBarDelegate,UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 @property (nonatomic, strong) SXReadBottomBar *bottomBar;
 @property (nonatomic,strong)  SXReadTopBar    *topBar;
+
+@property (nonatomic, strong) UIPageViewController *pageViewController;
+
+
 @end
 
-@implementation ReadViewController
+@implementation ReaderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    [self configEvents];
     self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
-//    [self.tabBarController.tabBar setHidden:YES];
-//    [[self navigationController] setNavigationBarHidden:YES animated:YES];
-    
-    [self.view bk_whenTapped:^{
-        if (self.topBar && self.bottomBar) {
-            [self hiddenToolBar];
-        }else {
-            [self showToolBar];
-        }
-    }];
+    [self addPageViewController];
+    [self showReaderPage:0];
 
 }
 
@@ -39,8 +37,26 @@
     
 }
 
+- (void)configEvents{
+    [self.view bk_whenTapped:^{
+        if (self.topBar && self.bottomBar) {
+            [self hiddenToolBar];
+        }else {
+            [self showToolBar];
+        }
+    }];
+}
 
 
+
+- (void)showReaderPage:(NSUInteger)page
+{
+    ReaderTextController *reader = [ReaderTextController new];
+    [self.pageViewController setViewControllers:@[reader]
+                                  direction:UIPageViewControllerNavigationDirectionForward
+                                   animated:NO
+                                 completion:nil];
+}
 #pragma  mark - SXReadTapToolBarDelegate
 - (void)readerTopToolBar:(SXReadTopBar *)readerToolBar didClickedAction:(SXReadTapToolBarAction)action
 {
@@ -60,42 +76,47 @@
 
 
 
+#pragma mark - UIPageViewControllerDataSource
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
+{
+   NSLog(@"go pre");
+    
+    ReaderTextController *reader = [ReaderTextController new];
+    return reader;
+}
+
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSLog(@"go after");
+    
+    ReaderTextController *reader = [ReaderTextController new];
+    return reader;
+}
+
+#pragma mark - UIPageViewControllerDelegate
+
+- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray<UIViewController *> *)previousViewControllers transitionCompleted:(BOOL)completed
+{
+    
+}
 
 
 
 
+- (void)addPageViewController
+{
+    UIPageViewController *pageViewController = [[UIPageViewController alloc]init];
+    pageViewController.delegate   = self;
+    pageViewController.dataSource = self;
+    pageViewController.view.frame = self.view.bounds;
+    
+    [self addChildViewController:pageViewController];
+    [self.view addSubview:pageViewController.view];
+    _pageViewController = pageViewController;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 

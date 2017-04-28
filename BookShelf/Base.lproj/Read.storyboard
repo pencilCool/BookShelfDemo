@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Read View Controller-->
+        <!--Reader View Controller-->
         <scene sceneID="dPx-Kd-vN4">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="y86-QR-1M2" customClass="ReadViewController" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="y86-QR-1M2" customClass="ReaderViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hr2-rN-OmD"/>
                         <viewControllerLayoutGuide type="bottom" id="Xic-2V-qxp"/>
@@ -29,7 +29,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YvL-6P-3oA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2617" y="-695"/>
+            <point key="canvasLocation" x="2553" y="-1182"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="z8x-xH-Z7v">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="sfr-0W-2rF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81Y-FY-muH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3977" y="-1588"/>
         </scene>
         <!--DownLoad-->
         <scene sceneID="aMS-Jz-eQy">
