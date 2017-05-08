@@ -7,13 +7,16 @@
 //
 
 #import "SXTextParser.h"
+@interface SXTextParser()
 
+@end
 @implementation SXTextParser
 {
     NSDictionary *_bodyTextAttributes;
     NSDictionary *_headingOneAttributes;
     NSDictionary *_headingTwoAttributes;
     NSDictionary *_headingThreeAttributes;
+    UIFont       *currentFont;
 }
 
 - (instancetype)init {
@@ -28,8 +31,24 @@
 {
     NSMutableAttributedString *parsedOutput = [NSMutableAttributedString new];
     
-   NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str attributes:_headingThreeAttributes];
+    
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str attributes:_headingThreeAttributes];
     [parsedOutput appendAttributedString:attributedText];
+    
+    
+    // 添加段落属性
+    NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+    paragraphStyle.firstLineHeadIndent = 2* [currentFont pointSize];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraphStyle.paragraphSpacing = 20;//段落后间距
+    paragraphStyle.paragraphSpacingBefore = 5;//段落前间距
+    paragraphStyle.lineHeightMultiple = 1.0;//行间距多少倍
+    paragraphStyle.alignment = NSTextAlignmentLeft;//对齐方式
+    paragraphStyle.lineSpacing = 2;
+    
+    
+    NSRange range = NSMakeRange(0, str.length);
+    [parsedOutput addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];
     return parsedOutput;
 }
 
@@ -56,6 +75,7 @@
 
 - (NSDictionary *)attributesWithDescriptor:(UIFontDescriptor *)descriptor size:(CGFloat) size {
     UIFont *font = [UIFont fontWithDescriptor:descriptor size:size];
+    currentFont = font;
     return @{NSFontAttributeName: font};
 }
 

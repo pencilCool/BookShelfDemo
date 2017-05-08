@@ -8,7 +8,7 @@
 
 #import "ChapterModel.h"
 #import "SXTextParser.h"
-@interface ChapterModel()
+@interface ChapterModel()<NSLayoutManagerDelegate>
 @property (nonatomic, strong) SXTextParser *parser;
 @end
 
@@ -38,6 +38,7 @@
     self.textStorage = [[SXReaderTextStorage alloc] init];
     [self.textStorage setAttributedString:self.content];
     self.layoutManager = [[NSLayoutManager alloc] init];
+    self.layoutManager.delegate = self;
     [self.textStorage addLayoutManager:self.layoutManager];
 
     NSRange range = NSMakeRange(0, 0);
@@ -51,6 +52,10 @@
     }
 }
 
+- (CGFloat)layoutManager:(NSLayoutManager *)layoutManager lineSpacingAfterGlyphAtIndex:(NSUInteger)glyphIndex withProposedLineFragmentRect:(CGRect)rect
+{
+    return floorf(glyphIndex / 100);
+}
 
 - (NSAttributedString *)content {
     NSString *path = [self chapterPath];
