@@ -9,12 +9,14 @@
 #import "ReaderViewController.h"
 #import "SXReadBottomBar.h"
 #import "SXReadTopBar.h"
+#import "SXReaderSettingView.h"
 #import "DownLoadViewController.h"
 
 #import "ReaderTextController.h"
 @interface ReaderViewController ()<SXReadTopToolBarDelegate,SXReadBottomToolBarDelegate,UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 @property (nonatomic, strong) SXReadBottomBar *bottomBar;
-@property (nonatomic,strong)  SXReadTopBar    *topBar;
+@property (nonatomic, strong) SXReadTopBar    *topBar;
+@property (nonatomic, strong) SXReaderSettingView *settingsView;
 
 @property (nonatomic, strong) UIPageViewController *pageViewController;
 
@@ -31,6 +33,10 @@
     toolBarShow = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
+    
+    
+    
+    
     [self addPageViewController];
     [self showReaderPage:0];
 
@@ -93,7 +99,8 @@
             break;
         case SXReadBottomToolBarActionSettings:
         {
-            [self performSegueWithIdentifier:@"DownLoad" sender:self];
+            [self.settingsView appear];
+            break;
         }
             
         default:
@@ -183,5 +190,16 @@
         [self.topBar   removeFromSuperview];
         self.topBar = nil;
     }];
+}
+
+
+- (SXReaderSettingView *)settingsView
+{
+    if (!_settingsView) {
+        _settingsView = [SXReaderSettingView createViewFromNib];
+        [self.view addSubview:self.settingsView];
+       
+    }
+    return _settingsView;
 }
 @end
