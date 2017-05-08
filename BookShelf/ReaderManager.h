@@ -17,7 +17,7 @@
 @property (nonatomic, strong) id<ReaderModelProtocol>model;
 @property (nonatomic, assign) NSUInteger   currentChapeterContainerIndex;
 
-+ (NSString *)fetchChapter;
+
 
 
 + (instancetype ) sharedManager;
@@ -25,6 +25,9 @@
 - (ChapterModel *)currentChapter;
 - (void)setVisableRange:(NSRange )range;
 
+
+
+- (NSTextContainer *)currentTextContainer;
 
 
 - (id<ReaderModelProtocol>) currentPage;

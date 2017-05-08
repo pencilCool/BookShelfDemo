@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ReaderTextController : UIViewController
-@property (nonatomic, assign) NSUInteger containterIndex;
 - (instancetype)initWithReaderModel:(id<ReaderModelProtocol>)model;
 @end

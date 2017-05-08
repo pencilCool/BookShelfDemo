@@ -10,13 +10,20 @@
 @interface ReaderManager()
 
 @property (nonatomic, strong) ChapterModel *currentChapter;
-@property (nonatomic, strong) NSString     *contentText;
 @property (nonatomic, assign) NSRange      visibleRange;
 @property (nonatomic, strong) id<ReaderModelProtocol> currentModel;
+
+
+@property (nonatomic, strong) NSLayoutManager *layoutManager;
+@property (nonatomic, strong) NSTextContainer *textContainer;
+@property (nonatomic, strong) NSTextStorage   *textStorage;
 
 @end
 
 @implementation ReaderManager
+{
+    
+}
 
 + (instancetype)sharedManager
 {
@@ -32,28 +39,17 @@
 {
     self = [super init];
     if (self) {
-        self.contentText = [ReaderManager fetchChapter];
+        
+       
     }
     return self;
 }
-
 
 - (instancetype)init{
     NSException *expection = [NSException exceptionWithName:@"fatal error " reason:@"should use sharedManager to get the instance" userInfo:nil];
     [expection raise];
     return nil;
 }
-
-+ (NSString *)fetchChapter
-{
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"第1章" ofType:@"txt"];
-    NSString *result  = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    return result;
-  
-}
-
-
-
 
 
 - (void)setVisableRange:(NSRange)range
@@ -65,6 +61,7 @@
 
 - (id<ReaderModelProtocol>)currentPage
 {
+    self.currentChapter = [[ChapterModel alloc] initWithFictionName:nil chapterName:@"第1章"];
     return  self.currentChapter;
 }
 
@@ -72,26 +69,47 @@
 - (id<ReaderModelProtocol>) nextPage
 {
     id<ReaderModelProtocol> model = self.currentChapter;
-    self.currentChapeterContainerIndex ++ ;
-    return model;
+    
+    if (self.currentChapeterContainerIndex < [self.currentChapter pageCount] - 1)
+    {
+        self.currentChapeterContainerIndex ++ ;
+    }
+    else
+    {
+        //FIXME: next chapter
+        NSLog(@"need jump to next chapter ");
+    }
+        return model;
 }
 - (id<ReaderModelProtocol>) prePage
 {
     
     id<ReaderModelProtocol> model = self.currentChapter;
-    self.currentChapeterContainerIndex -- ;
+    
+    if (self.currentChapeterContainerIndex > 0)
+    {
+        self.currentChapeterContainerIndex -- ;
+    }
+    else
+    {
+        //FIXME: 跳转到上一章
+        NSLog(@"need to jump to pre chapter");
+    }
+    
     return model;
 }
 
 
-
-
-- (ChapterModel *)currentChapter
+- (NSTextContainer *)currentTextContainer
 {
-    if (!_currentChapter) {
-        _currentChapter = [ChapterModel new];
-        _currentChapter.text = [ReaderManager fetchChapter];
-    }
-    return _currentChapter;
+    return self.currentChapter.layoutManager.textContainers[_currentChapeterContainerIndex];
 }
+
+//- (ChapterModel *)currentChapter
+//{
+//    if (!_currentChapter) {
+//        _currentChapter = [ChapterModel new];
+//    }
+//    return _currentChapter;
+//}
 @end

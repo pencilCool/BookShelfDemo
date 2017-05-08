@@ -23,6 +23,8 @@
 		EC37852B1EB1C88F00E8B6F5 /* ReaderTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37852A1EB1C88F00E8B6F5 /* ReaderTextController.m */; };
 		EC3785861EB2DA8E00E8B6F5 /* ReaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */; };
 		EC37858B1EB2DCAF00E8B6F5 /* ChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */; };
+		EC3C1B3C1EC04BBC00894961 /* SXReaderTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3C1B3B1EC04BBC00894961 /* SXReaderTextStorage.m */; };
+		EC3C1B3F1EC053C000894961 /* SXTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3C1B3E1EC053C000894961 /* SXTextParser.m */; };
 		EC701E351EAF476800D4EFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E341EAF476800D4EFCE /* main.m */; };
 		EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E371EAF476800D4EFCE /* AppDelegate.m */; };
 		EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E3A1EAF476800D4EFCE /* ViewController.m */; };
@@ -82,6 +84,10 @@
 		EC3785891EB2DCAF00E8B6F5 /* ChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterModel.h; sourceTree = "<group>"; };
 		EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterModel.m; sourceTree = "<group>"; };
 		EC37858C1EB2F30400E8B6F5 /* ReaderModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderModelProtocol.h; sourceTree = "<group>"; };
+		EC3C1B3A1EC04BBC00894961 /* SXReaderTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReaderTextStorage.h; sourceTree = "<group>"; };
+		EC3C1B3B1EC04BBC00894961 /* SXReaderTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXReaderTextStorage.m; sourceTree = "<group>"; };
+		EC3C1B3D1EC053C000894961 /* SXTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTextParser.h; sourceTree = "<group>"; };
+		EC3C1B3E1EC053C000894961 /* SXTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXTextParser.m; sourceTree = "<group>"; };
 		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -180,8 +186,20 @@
 				EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */,
 				EC3785891EB2DCAF00E8B6F5 /* ChapterModel.h */,
 				EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */,
+				EC3C1B391EC04B8700894961 /* Model */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		EC3C1B391EC04B8700894961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC3C1B3A1EC04BBC00894961 /* SXReaderTextStorage.h */,
+				EC3C1B3B1EC04BBC00894961 /* SXReaderTextStorage.m */,
+				EC3C1B3D1EC053C000894961 /* SXTextParser.h */,
+				EC3C1B3E1EC053C000894961 /* SXTextParser.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		EC701E271EAF476800D4EFCE = {
@@ -499,12 +517,14 @@
 				EC37858B1EB2DCAF00E8B6F5 /* ChapterModel.m in Sources */,
 				EC1D59E51EB0959F002AE988 /* SXReadTopBar.m in Sources */,
 				EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */,
+				EC3C1B3C1EC04BBC00894961 /* SXReaderTextStorage.m in Sources */,
 				EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */,
 				EC3785861EB2DA8E00E8B6F5 /* ReaderManager.m in Sources */,
 				EC1D59DD1EB091C9002AE988 /* UIView+NIB.m in Sources */,
 				EC701E351EAF476800D4EFCE /* main.m in Sources */,
 				EC3785111EB187AC00E8B6F5 /* DownLoadViewController.m in Sources */,
 				EC701E6C1EAF51A500D4EFCE /* UIColor+SXAdd.m in Sources */,
+				EC3C1B3F1EC053C000894961 /* SXTextParser.m in Sources */,
 				EC37852B1EB1C88F00E8B6F5 /* ReaderTextController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

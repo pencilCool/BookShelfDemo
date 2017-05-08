@@ -11,7 +11,13 @@
 // 定义每一页需要哪些信息。
 @protocol ReaderModelProtocol <NSObject>  //需要有哪些数据呢?
 @property (nonatomic, strong) NSString *text;
+
+@property (nonatomic, strong) NSString *fictionName;
+@property (nonatomic, strong) NSString *chapterName;
+
 @property (nonatomic, weak )  YYTextView  *textView;
+
+
 
 @end
 
