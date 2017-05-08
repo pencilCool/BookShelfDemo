@@ -54,7 +54,7 @@
 
 - (CGFloat)layoutManager:(NSLayoutManager *)layoutManager lineSpacingAfterGlyphAtIndex:(NSUInteger)glyphIndex withProposedLineFragmentRect:(CGRect)rect
 {
-    return floorf(glyphIndex / 100);
+    return 10;
 }
 
 - (NSAttributedString *)content {

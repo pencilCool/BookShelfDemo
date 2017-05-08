@@ -8,6 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SXReadBottomBar : UIView
 
+@class SXReadBottomBar;
+
+typedef NS_ENUM(NSUInteger, SXReadBottomToolBarAction) {
+    SXReadBottomToolBarActionCatalog,
+    SXReadBottomToolBarActionProgress,
+    SXReadBottomToolBarActionSettings,
+    SXReadBottomToolBarActionComment,
+    
+};
+
+@protocol SXReadBottomToolBarDelegate <NSObject>
+- (void)readerBottomToollBar:(SXReadBottomBar *)readerToolBar didClickedAction:(SXReadBottomToolBarAction)action;
+@end
+
+@interface SXReadBottomBar : UIView
+@property (nonatomic, weak) id<SXReadBottomToolBarDelegate>delegate;
 @end

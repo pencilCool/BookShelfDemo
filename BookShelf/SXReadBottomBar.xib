@@ -22,18 +22,30 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6R-sX-9Ld">
                             <rect key="frame" x="0.0" y="0.0" width="31" height="52"/>
                             <state key="normal" title="目录"/>
+                            <connections>
+                                <action selector="bottomBarActions:" destination="LYe-DA-hIb" eventType="touchUpInside" id="fzx-AO-7XL"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pau-VP-5t3">
                             <rect key="frame" x="127.5" y="0.0" width="31" height="52"/>
                             <state key="normal" title="进度"/>
+                            <connections>
+                                <action selector="bottomBarActions:" destination="LYe-DA-hIb" eventType="touchUpInside" id="E8h-Bh-VhL"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-ZB-0aH">
                             <rect key="frame" x="255.5" y="0.0" width="31" height="52"/>
                             <state key="normal" title="设置"/>
+                            <connections>
+                                <action selector="bottomBarActions:" destination="LYe-DA-hIb" eventType="touchUpInside" id="svx-Ae-8dk"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rq-Ac-3nm">
                             <rect key="frame" x="383" y="0.0" width="46" height="52"/>
                             <state key="normal" title="章评论"/>
+                            <connections>
+                                <action selector="bottomBarActions:" destination="LYe-DA-hIb" eventType="touchUpInside" id="mZf-x4-cJc"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -46,6 +58,12 @@
                 <constraint firstAttribute="bottomMargin" secondItem="DBV-Bu-6KM" secondAttribute="bottom" id="kcl-RW-LKq"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="actionButtons" destination="k6R-sX-9Ld" id="YjK-eS-3Z1"/>
+                <outletCollection property="actionButtons" destination="pau-VP-5t3" id="evS-mq-a00"/>
+                <outletCollection property="actionButtons" destination="IkV-ZB-0aH" id="68X-UP-LAn"/>
+                <outletCollection property="actionButtons" destination="1Rq-Ac-3nm" id="xVt-U8-2Qe"/>
+            </connections>
             <point key="canvasLocation" x="-241" y="-1402"/>
         </view>
     </objects>

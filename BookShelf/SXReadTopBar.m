@@ -24,7 +24,7 @@
 
 - (IBAction)topBarActions:(id)sender {
 
-    SXReadTapToolBarAction actionType;
+    SXReadTopToolBarAction actionType;
     actionType =  [self.actionButtons indexOfObject:sender];
     if (self.delegate && [self.delegate respondsToSelector:@selector(readerTopToolBar:didClickedAction:)]) {
         [self.delegate readerTopToolBar:self didClickedAction:actionType];

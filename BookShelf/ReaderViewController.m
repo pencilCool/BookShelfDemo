@@ -12,7 +12,7 @@
 #import "DownLoadViewController.h"
 
 #import "ReaderTextController.h"
-@interface ReaderViewController ()<SXReadTapToolBarDelegate,UIPageViewControllerDelegate,UIPageViewControllerDataSource>
+@interface ReaderViewController ()<SXReadTopToolBarDelegate,SXReadBottomToolBarDelegate,UIPageViewControllerDelegate,UIPageViewControllerDataSource>
 @property (nonatomic, strong) SXReadBottomBar *bottomBar;
 @property (nonatomic,strong)  SXReadTopBar    *topBar;
 
@@ -66,13 +66,13 @@
                                  completion:nil];
 }
 #pragma  mark - SXReadTapToolBarDelegate
-- (void)readerTopToolBar:(SXReadTopBar *)readerToolBar didClickedAction:(SXReadTapToolBarAction)action
+- (void)readerTopToolBar:(SXReadTopBar *)readerToolBar didClickedAction:(SXReadTopToolBarAction)action
 {
     switch (action) {
-        case SXReadTapToolBarActionBack:
+        case SXReadTopToolBarActionBack:
             [self.navigationController popViewControllerAnimated:YES];
             break;
-        case SXReadTapToolBarActionDownLoad:
+        case SXReadTopToolBarActionDownLoad:
         {
             [self performSegueWithIdentifier:@"DownLoad" sender:self];
         }
@@ -82,6 +82,24 @@
     }
 }
 
+#pragma mark - SXReadBottomToolBarDelegate
+
+- (void)readerBottomToollBar:(SXReadBottomBar *)readerToolBar didClickedAction:(SXReadBottomToolBarAction)action
+{
+    switch (action) {
+        case SXReadBottomToolBarActionCatalog:
+            //FIXME: catalog
+            NSLog(@"catalog");
+            break;
+        case SXReadBottomToolBarActionSettings:
+        {
+            [self performSegueWithIdentifier:@"DownLoad" sender:self];
+        }
+            
+        default:
+            break;
+    }
+}
 
 
 #pragma mark - UIPageViewControllerDataSource

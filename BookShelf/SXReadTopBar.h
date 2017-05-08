@@ -11,21 +11,21 @@
 
 @class SXReadTopBar;
 
-typedef NS_ENUM(NSUInteger, SXReadTapToolBarAction) {
-    SXReadTapToolBarActionBack,
-    SXReadTapToolBarActionListen,
-    SXReadTapToolBarActionDownLoad,
-    SXReadTapToolBarActionReward,
-    SXReadTapToolBarActionMore,
+typedef NS_ENUM(NSUInteger, SXReadTopToolBarAction) {
+    SXReadTopToolBarActionBack,
+    SXReadTopToolBarActionListen,
+    SXReadTopToolBarActionDownLoad,
+    SXReadTopToolBarActionReward,
+    SXReadTopToolBarActionMore,
 };
 
-@protocol SXReadTapToolBarDelegate <NSObject>
-- (void)readerTopToolBar:(SXReadTopBar *)readerToolBar didClickedAction:(SXReadTapToolBarAction)action;
+@protocol SXReadTopToolBarDelegate <NSObject>
+- (void)readerTopToolBar:(SXReadTopBar *)readerToolBar didClickedAction:(SXReadTopToolBarAction)action;
 @end
 
 @interface SXReadTopBar : UIView
 
 
-@property (nonatomic, weak) id<SXReadTapToolBarDelegate>delegate;
+@property (nonatomic, weak) id<SXReadTopToolBarDelegate>delegate;
 
 @end
