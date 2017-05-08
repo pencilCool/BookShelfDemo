@@ -7,16 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ReaderModelProtocol.h"
+#import "ChapterModel.h"
 
-@protocol ReaderModelProtocol <NSObject>  //需要有哪些数据呢?
-@property (nonatomic, strong) NSString *text;
-
-@end
 
 
 @interface ReaderManager : NSObject
+@property (nonatomic, weak  ) YYLabel      *label;//
 @property (nonatomic, strong) id<ReaderModelProtocol>model;
-
+@property (nonatomic, assign) NSUInteger   currentChapeterContainerIndex;
 
 + (NSString *)fetchChapter;
+
+
++ (instancetype ) sharedManager;
+
+- (ChapterModel *)currentChapter;
+- (void)setVisableRange:(NSRange )range;
+
+
+
+- (id<ReaderModelProtocol>) currentPage;
+- (id<ReaderModelProtocol>) nextPage;
+- (id<ReaderModelProtocol>) prePage;
+
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
 @end

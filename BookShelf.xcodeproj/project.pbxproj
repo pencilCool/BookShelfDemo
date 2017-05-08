@@ -81,6 +81,7 @@
 		EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderManager.m; sourceTree = "<group>"; };
 		EC3785891EB2DCAF00E8B6F5 /* ChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterModel.h; sourceTree = "<group>"; };
 		EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterModel.m; sourceTree = "<group>"; };
+		EC37858C1EB2F30400E8B6F5 /* ReaderModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderModelProtocol.h; sourceTree = "<group>"; };
 		EC701E301EAF476800D4EFCE /* BookShelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC701E341EAF476800D4EFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC701E361EAF476800D4EFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +175,7 @@
 		EC3785881EB2DA9900E8B6F5 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				EC37858C1EB2F30400E8B6F5 /* ReaderModelProtocol.h */,
 				EC3785841EB2DA8E00E8B6F5 /* ReaderManager.h */,
 				EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */,
 				EC3785891EB2DCAF00E8B6F5 /* ChapterModel.h */,

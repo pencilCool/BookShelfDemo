@@ -51,7 +51,8 @@
 
 - (void)showReaderPage:(NSUInteger)page
 {
-    ReaderTextController *reader = [ReaderTextController new];
+    id<ReaderModelProtocol> model = [[ReaderManager sharedManager] currentPage];
+    ReaderTextController *reader = [[ReaderTextController alloc] initWithReaderModel:model];
     [self.pageViewController setViewControllers:@[reader]
                                   direction:UIPageViewControllerNavigationDirectionForward
                                    animated:NO
@@ -81,8 +82,8 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
    NSLog(@"go pre");
-    
-    ReaderTextController *reader = [ReaderTextController new];
+    id<ReaderModelProtocol> model = [[ReaderManager sharedManager] prePage];
+    ReaderTextController *reader = [[ReaderTextController alloc] initWithReaderModel:model];
     return reader;
 }
 
@@ -90,8 +91,8 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
     NSLog(@"go after");
-    
-    ReaderTextController *reader = [ReaderTextController new];
+    id<ReaderModelProtocol> model = [[ReaderManager sharedManager] nextPage];
+    ReaderTextController *reader = [[ReaderTextController alloc] initWithReaderModel:model];;
     return reader;
 }
 

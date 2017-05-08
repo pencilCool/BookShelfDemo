@@ -9,5 +9,7 @@
 #import "ChapterModel.h"
 
 @implementation ChapterModel
+@synthesize textView = _textView;
+
 
 @end
