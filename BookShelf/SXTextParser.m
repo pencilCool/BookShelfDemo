@@ -32,7 +32,7 @@
     NSMutableAttributedString *parsedOutput = [NSMutableAttributedString new];
     
     
-    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str attributes:_headingThreeAttributes];
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str attributes:_bodyTextAttributes];
     [parsedOutput appendAttributedString:attributedText];
     
     

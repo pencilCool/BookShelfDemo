@@ -44,7 +44,7 @@
     NSRange range = NSMakeRange(0, 0);
     chapterPageCount = 0;
     while (NSMaxRange(range) < _layoutManager.numberOfGlyphs) {
-        CGSize containerSize = CGSizeMake(kScreenWidth - 30, kScreenHeight-30);
+        CGSize containerSize = CGSizeMake(kScreenWidth - 30, kScreenHeight-80);
         NSTextContainer *container =  [[NSTextContainer alloc] initWithSize:containerSize];
         [_layoutManager addTextContainer:container];
         range = [_layoutManager glyphRangeForTextContainer:container];

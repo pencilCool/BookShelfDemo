@@ -40,7 +40,7 @@
 {
 
     NSTextContainer *textContainer = [[ReaderManager sharedManager] currentTextContainer];
-    CGRect textViewFame = CGRectInset(self.view.bounds, 10, 10);
+    CGRect textViewFame = CGRectInset(self.view.bounds, 15, 40);
     self.textView = [[UITextView alloc] initWithFrame:textViewFame textContainer:textContainer];
     self.textView.scrollEnabled = NO;
     [self.view addSubview:self.textView];

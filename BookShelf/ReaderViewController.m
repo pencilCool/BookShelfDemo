@@ -21,11 +21,15 @@
 
 @end
 
-@implementation ReaderViewController
+@implementation ReaderViewController{
+    BOOL toolBarShow;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configEvents];
+    toolBarShow = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
     [self addPageViewController];
     [self showReaderPage:0];
@@ -47,7 +51,10 @@
     }];
 }
 
-
+- (BOOL)prefersStatusBarHidden
+{
+    return !toolBarShow;
+}
 
 - (void)showReaderPage:(NSUInteger)page
 {
@@ -123,6 +130,8 @@
 
 
 - (void)showToolBar {
+    toolBarShow = YES;
+    [self setNeedsStatusBarAppearanceUpdate];
     self.topBar = [SXReadTopBar createViewFromNib];
     self.topBar.delegate = self;
     [self.view addSubview:self.topBar];
@@ -143,6 +152,8 @@
 }
 
 - (void)hiddenToolBar {
+    toolBarShow = NO;
+    [self setNeedsStatusBarAppearanceUpdate];
     
     [UIView animateWithDuration:0.2 animations:^{
         self.topBar.frame = CGRectMake(0, -64, self.view.width, 64);
