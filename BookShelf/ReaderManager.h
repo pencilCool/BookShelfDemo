@@ -40,6 +40,8 @@
 
 
 // Font
+
+@property (nonatomic, strong, readonly) UIFont *currentFont;
 - (void)fontSize:(CGFloat) size;
 - (BOOL)smallerFontSize;  // 最小12
 - (BOOL)biggerFontSize;  // 最大30

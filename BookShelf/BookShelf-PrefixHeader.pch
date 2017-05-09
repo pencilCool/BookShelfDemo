@@ -16,4 +16,6 @@
 #import "UIView+NIB.h"
 
 #import "ReaderManager.h"
+
+#import "SXHelper.h"
 #endif

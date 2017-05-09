@@ -40,7 +40,7 @@
     self = [super init];
     if (self) {
         
-       
+        _currentFont = [UIFont systemFontOfSize:17.0];
     }
     return self;
 }
@@ -109,6 +109,35 @@
 
 - (UIFont *)defaultFont
 {
+    _currentFont = [UIFont systemFontOfSize:17.0];
+    return [_currentFont copy];
+}
+
+- (BOOL)smallerFontSize
+{
+    CGFloat fontSize = [_currentFont pointSize];
+    if (fontSize > 13.0) {
+        _currentFont = [UIFont systemFontOfSize:--fontSize];
+        return  YES;
+    }else {
+        return NO;
+    }
     
 }
+
+- (CGFloat)currentFontSize
+{
+    return [_currentFont pointSize];
+}
+- (BOOL)biggerFontSize
+{
+    CGFloat fontSize = [_currentFont pointSize];
+    if (fontSize < 30.0) {
+        _currentFont = [UIFont systemFontOfSize:++fontSize];
+        return  YES;
+    }else {
+        return NO;
+    }
+}
+
 @end

@@ -24,6 +24,7 @@
 {
     if (self = [super initWithCoder:aDecoder]) {
        self.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 240);
+        [self configureEvent];
     }
     return self;
 }
@@ -35,6 +36,12 @@
     
 }
 
+- (void)configureEvent
+{
+        [self bk_whenTapped:^{
+           // do no thing ,just avoid event sender to his superview,when font button disabled
+        }];
+}
 
 - (void)appear
 {
@@ -65,7 +72,7 @@
        self.bigFontButton.enabled = YES;
    }
    
-    self.fontSizeLabel.text =  [NSString stringWithFormat:@"%f",[[ReaderManager sharedManager] currentFontSize]];
+    self.fontSizeLabel.text =  [NSString stringWithFormat:@"%d",(int)[[ReaderManager sharedManager] currentFontSize]];
 }
 
 
@@ -79,7 +86,7 @@
     {
         self.smallFontButton.enabled = YES;
     }
-    self.fontSizeLabel.text =  [NSString stringWithFormat:@"%f",[[ReaderManager sharedManager] currentFontSize]];
+    self.fontSizeLabel.text =  [NSString stringWithFormat:@"%d",(int)[[ReaderManager sharedManager] currentFontSize]];
 }
 
 

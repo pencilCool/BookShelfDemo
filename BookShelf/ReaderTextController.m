@@ -7,13 +7,13 @@
 //
 
 #import "ReaderTextController.h"
-
+#import "SXBottomStatusBar.h"
 @interface ReaderTextController ()
 
 @property (nonatomic, strong) UITextView *textView;
 @property (nonatomic, strong) id<ReaderModelProtocol> model;
 
-
+@property (nonatomic, strong) SXBottomStatusBar *statusBar;
 @end
 
 @implementation ReaderTextController
@@ -33,6 +33,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1.0];
     [self buildViewsForCurrentPage];
+    self.statusBar = [[SXBottomStatusBar alloc] initWithFrame:CGRectMake(0, self.view.height - 20, self.view.width, 20)];
+    [self.view addSubview:self.statusBar];
 }
 
 

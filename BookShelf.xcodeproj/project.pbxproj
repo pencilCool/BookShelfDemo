@@ -23,6 +23,7 @@
 		EC37852B1EB1C88F00E8B6F5 /* ReaderTextController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37852A1EB1C88F00E8B6F5 /* ReaderTextController.m */; };
 		EC3785861EB2DA8E00E8B6F5 /* ReaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3785851EB2DA8E00E8B6F5 /* ReaderManager.m */; };
 		EC37858B1EB2DCAF00E8B6F5 /* ChapterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */; };
+		EC37B5401EC1715B00E29CEE /* SXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC37B53F1EC1715B00E29CEE /* SXHelper.m */; };
 		EC3C1B3C1EC04BBC00894961 /* SXReaderTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3C1B3B1EC04BBC00894961 /* SXReaderTextStorage.m */; };
 		EC3C1B3F1EC053C000894961 /* SXTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3C1B3E1EC053C000894961 /* SXTextParser.m */; };
 		EC3D8F021EC0744500D8E89E /* SXBottomStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC3D8F011EC0744500D8E89E /* SXBottomStatusBar.m */; };
@@ -88,6 +89,8 @@
 		EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterModel.m; sourceTree = "<group>"; };
 		EC37858C1EB2F30400E8B6F5 /* ReaderModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderModelProtocol.h; sourceTree = "<group>"; };
 		EC37B53D1EC170F600E29CEE /* 汉仪旗黑50简.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "汉仪旗黑50简.ttf"; sourceTree = "<group>"; };
+		EC37B53E1EC1715B00E29CEE /* SXHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXHelper.h; sourceTree = "<group>"; };
+		EC37B53F1EC1715B00E29CEE /* SXHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXHelper.m; sourceTree = "<group>"; };
 		EC3C1B3A1EC04BBC00894961 /* SXReaderTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReaderTextStorage.h; sourceTree = "<group>"; };
 		EC3C1B3B1EC04BBC00894961 /* SXReaderTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXReaderTextStorage.m; sourceTree = "<group>"; };
 		EC3C1B3D1EC053C000894961 /* SXTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTextParser.h; sourceTree = "<group>"; };
@@ -209,6 +212,15 @@
 			name = Font;
 			sourceTree = "<group>";
 		};
+		EC37B5411EC1716300E29CEE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EC37B53E1EC1715B00E29CEE /* SXHelper.h */,
+				EC37B53F1EC1715B00E29CEE /* SXHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		EC3C1B391EC04B8700894961 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +257,7 @@
 		EC701E321EAF476800D4EFCE /* BookShelf */ = {
 			isa = PBXGroup;
 			children = (
+				EC37B5411EC1716300E29CEE /* Helper */,
 				EC3785201EB1BDA400E8B6F5 /* Source */,
 				EC701EBA1EAF629300D4EFCE /* View */,
 				EC3785881EB2DA9900E8B6F5 /* Manager */,
@@ -545,6 +558,7 @@
 				EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */,
 				EC3785861EB2DA8E00E8B6F5 /* ReaderManager.m in Sources */,
 				EC3D8F021EC0744500D8E89E /* SXBottomStatusBar.m in Sources */,
+				EC37B5401EC1715B00E29CEE /* SXHelper.m in Sources */,
 				EC1D59DD1EB091C9002AE988 /* UIView+NIB.m in Sources */,
 				EC701E351EAF476800D4EFCE /* main.m in Sources */,
 				EC3D8F051EC0798200D8E89E /* SXReaderSettingView.m in Sources */,
