@@ -7,13 +7,18 @@
 //
 
 #import "SXReaderSettingView.h"
+@interface SXReaderSettingView()
 
+@end
 @implementation SXReaderSettingView
-
-- (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame]) {
-        
+    CGRect originalFrame;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+       self.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 240);
     }
     return self;
 }
@@ -21,15 +26,28 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    
+    
 }
+
 
 - (void)appear
 {
+    _isAppear = YES;
+    [UIView animateWithDuration:0.3 animations:^{
+        self.frame = CGRectMake(0, kScreenHeight - 240, kScreenWidth, 240);
+    }];
     
 }
 
-- (void)disappear{
-    
+- (void)disappear
+{
+    _isAppear = NO;
+    [UIView animateWithDuration:0.3 animations:^{
+        self.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 240);
+    }];
 }
+
+
 
 @end

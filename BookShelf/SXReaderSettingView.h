@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SXReaderSettingView : UIView
-
+@property (nonatomic, assign ,readonly) BOOL isAppear;
 - (void)appear;
 - (void)disappear;
 @end

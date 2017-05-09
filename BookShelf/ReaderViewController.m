@@ -49,10 +49,17 @@
 
 - (void)configEvents{
     [self.view bk_whenTapped:^{
+        
+        if (self.settingsView.isAppear) {
+            [self.settingsView disappear];
+            return ;
+        }
+        
         if (self.topBar && self.bottomBar) {
             [self hiddenToolBar];
         }else {
             [self showToolBar];
+           
         }
     }];
 }
@@ -100,6 +107,7 @@
         case SXReadBottomToolBarActionSettings:
         {
             [self.settingsView appear];
+            [self hiddenToolBar];
             break;
         }
             
@@ -155,8 +163,11 @@
 
 
 - (void)showToolBar {
+    
     toolBarShow = YES;
     [self setNeedsStatusBarAppearanceUpdate];
+    
+    
     self.topBar = [SXReadTopBar createViewFromNib];
     self.topBar.delegate = self;
     [self.view addSubview:self.topBar];
@@ -164,6 +175,7 @@
     
     
     self.bottomBar = [SXReadBottomBar createViewFromNib];
+    self.bottomBar.delegate = self;
     [self.view addSubview:self.bottomBar];
     self.bottomBar.frame = CGRectMake(0,self.view.height,self.view.width,49);
 
@@ -197,7 +209,9 @@
 {
     if (!_settingsView) {
         _settingsView = [SXReaderSettingView createViewFromNib];
-        [self.view addSubview:self.settingsView];
+
+        [self.view addSubview:_settingsView];
+        
        
     }
     return _settingsView;
