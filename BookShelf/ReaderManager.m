@@ -105,11 +105,10 @@
     return self.currentChapter.layoutManager.textContainers[_currentChapeterContainerIndex];
 }
 
-//- (ChapterModel *)currentChapter
-//{
-//    if (!_currentChapter) {
-//        _currentChapter = [ChapterModel new];
-//    }
-//    return _currentChapter;
-//}
+#pragma mark - Font 
+
+- (UIFont *)defaultFont
+{
+    
+}
 @end

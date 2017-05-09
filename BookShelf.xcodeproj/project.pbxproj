@@ -87,6 +87,7 @@
 		EC3785891EB2DCAF00E8B6F5 /* ChapterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterModel.h; sourceTree = "<group>"; };
 		EC37858A1EB2DCAF00E8B6F5 /* ChapterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterModel.m; sourceTree = "<group>"; };
 		EC37858C1EB2F30400E8B6F5 /* ReaderModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderModelProtocol.h; sourceTree = "<group>"; };
+		EC37B53D1EC170F600E29CEE /* 汉仪旗黑50简.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "汉仪旗黑50简.ttf"; sourceTree = "<group>"; };
 		EC3C1B3A1EC04BBC00894961 /* SXReaderTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXReaderTextStorage.h; sourceTree = "<group>"; };
 		EC3C1B3B1EC04BBC00894961 /* SXReaderTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXReaderTextStorage.m; sourceTree = "<group>"; };
 		EC3C1B3D1EC053C000894961 /* SXTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXTextParser.h; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 		EC3785201EB1BDA400E8B6F5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EC37B53C1EC170E500E29CEE /* Font */,
 				EC701EBB1EAF644C00D4EFCE /* testImage.png */,
 				EC3785251EB1C28300E8B6F5 /* 第2章.txt */,
 				EC3785271EB1C2C800E8B6F5 /* 第1章.txt */,
@@ -197,6 +199,14 @@
 				EC3C1B391EC04B8700894961 /* Model */,
 			);
 			name = Manager;
+			sourceTree = "<group>";
+		};
+		EC37B53C1EC170E500E29CEE /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EC37B53D1EC170F600E29CEE /* 汉仪旗黑50简.ttf */,
+			);
+			name = Font;
 			sourceTree = "<group>";
 		};
 		EC3C1B391EC04B8700894961 /* Model */ = {

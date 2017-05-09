@@ -8,6 +8,11 @@
 
 #import "SXReaderSettingView.h"
 @interface SXReaderSettingView()
+@property (weak, nonatomic) IBOutlet UIButton *smallFontButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *bigFontButton;
+@property (weak, nonatomic) IBOutlet UILabel *fontSizeLabel;
+
 
 @end
 @implementation SXReaderSettingView
@@ -46,6 +51,35 @@
     [UIView animateWithDuration:0.3 animations:^{
         self.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 240);
     }];
+}
+
+#pragma mark - Font
+
+- (IBAction)smallFont:(id)sender {
+   if (![[ReaderManager sharedManager] smallerFontSize])
+   {
+       self.smallFontButton.enabled = NO;
+   }
+   else
+   {
+       self.bigFontButton.enabled = YES;
+   }
+   
+    self.fontSizeLabel.text =  [NSString stringWithFormat:@"%f",[[ReaderManager sharedManager] currentFontSize]];
+}
+
+
+- (IBAction)bigFont:(id)sender {
+    
+    if (![[ReaderManager sharedManager] biggerFontSize])
+    {
+        self.bigFontButton.enabled = NO;
+    }
+    else
+    {
+        self.smallFontButton.enabled = YES;
+    }
+    self.fontSizeLabel.text =  [NSString stringWithFormat:@"%f",[[ReaderManager sharedManager] currentFontSize]];
 }
 
 

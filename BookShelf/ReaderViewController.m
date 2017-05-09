@@ -167,7 +167,6 @@
     toolBarShow = YES;
     [self setNeedsStatusBarAppearanceUpdate];
     
-    
     self.topBar = [SXReadTopBar createViewFromNib];
     self.topBar.delegate = self;
     [self.view addSubview:self.topBar];
@@ -209,10 +208,7 @@
 {
     if (!_settingsView) {
         _settingsView = [SXReaderSettingView createViewFromNib];
-
         [self.view addSubview:_settingsView];
-        
-       
     }
     return _settingsView;
 }

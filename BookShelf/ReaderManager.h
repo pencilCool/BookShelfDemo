@@ -35,4 +35,15 @@
 - (id<ReaderModelProtocol>) prePage;
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
+
+
+
+
+// Font
+- (void)fontSize:(CGFloat) size;
+- (BOOL)smallerFontSize;  // 最小12
+- (BOOL)biggerFontSize;  // 最大30
+- (CGFloat)currentFontSize;
+- (UIFont*) defaultFont;
+
 @end
