@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface SXReaderTextStorage : NSTextStorage
-
+- (void)update;// 字体变化等
 @end

@@ -42,10 +42,21 @@
 {
 
     NSTextContainer *textContainer = [[ReaderManager sharedManager] currentTextContainer];
-    CGRect textViewFame = CGRectInset(self.view.bounds, 15, 40);
+    CGRect textViewFame = CGRectInset(self.view.bounds, 15, 40);//15, 40
     self.textView = [[UITextView alloc] initWithFrame:textViewFame textContainer:textContainer];
+    //self.textView.textContainerInset = UIEdgeInsetsMake(15, 20, 15, 20);
     self.textView.scrollEnabled = NO;
+    self.textView.editable = NO;
+    self.textView.allowsEditingTextAttributes = YES;
     [self.view addSubview:self.textView];
+    
+    
+#ifdef DEBUG
+    NSLayoutManager *lm = self.textView.layoutManager;
+    NSTextContainer *tc = self.textView.textContainer;
+    NSRange range = [lm glyphRangeForTextContainer:tc];
+    NSLog(@"%@", NSStringFromRange(range));
+#endif
 
 }
 
