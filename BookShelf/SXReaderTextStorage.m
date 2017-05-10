@@ -49,11 +49,10 @@
 
 #pragma mark - 更新文章字体
 
-- (void)update
+- (void)update:(UIFont *)font;
 {
     [self createHighlightPatterns];// 第一章第二章等文字需要放大，加粗
-    NSDictionary *bodyFont =  @{NSFontAttributeName :
-                                    [UIFont preferredFontForTextStyle:UIFontTextStyleBody]};
+    NSDictionary *bodyFont =  @{NSFontAttributeName :font};
     [self addAttributes:bodyFont
                   range:NSMakeRange(0, self.length)];
     
@@ -64,35 +63,34 @@
 
 - (void)applyStylesToRange:(NSRange)searchRange
 {
-    NSDictionary* normalAttrs = @{NSFontAttributeName:
-                                      [UIFont preferredFontForTextStyle:UIFontTextStyleBody]};
-    
-    // iterate over each replacement
-    for (NSString* key in _replacements) {
-        NSRegularExpression *regex = [NSRegularExpression
-                                      regularExpressionWithPattern:key
-                                      options:0
-                                      error:nil];
-        
-        NSDictionary* attributes = _replacements[key];
-        
-        [regex enumerateMatchesInString:[_backingStore string]
-                                options:0
-                                  range:searchRange
-                             usingBlock:^(NSTextCheckingResult *match,
-                                          NSMatchingFlags flags,
-                                          BOOL *stop){
-                                 // apply the style
-                                 NSRange matchRange = [match rangeAtIndex:1];
-                                 [self addAttributes:attributes range:matchRange];
-                                 
-                                 // reset the style to the original
-                                 if (NSMaxRange(matchRange)+1 < self.length) {
-                                     [self addAttributes:normalAttrs
-                                                   range:NSMakeRange(NSMaxRange(matchRange)+1, 1)];
-                                 }
-                             }];
-    }
+//    NSDictionary* normalAttrs = @{NSFontAttributeName:
+//                                      [UIFont preferredFontForTextStyle:UIFontTextStyleBody]};
+//    // iterate over each replacement
+//    for (NSString* key in _replacements) {
+//        NSRegularExpression *regex = [NSRegularExpression
+//                                      regularExpressionWithPattern:key
+//                                      options:0
+//                                      error:nil];
+//        
+//        NSDictionary* attributes = _replacements[key];
+//        
+//        [regex enumerateMatchesInString:[_backingStore string]
+//                                options:0
+//                                  range:searchRange
+//                             usingBlock:^(NSTextCheckingResult *match,
+//                                          NSMatchingFlags flags,
+//                                          BOOL *stop){
+//                                 // apply the style
+//                                 NSRange matchRange = [match rangeAtIndex:1];
+//                                 [self addAttributes:attributes range:matchRange];
+//                                 
+//                                 // reset the style to the original
+//                                 if (NSMaxRange(matchRange)+1 < self.length) {
+//                                     [self addAttributes:normalAttrs
+//                                                   range:NSMakeRange(NSMaxRange(matchRange)+1, 1)];
+//                                 }
+//                             }];
+//    }
 }
 
 

@@ -31,9 +31,6 @@
     return self;
 }
 
-
-
-
 - (void)chapterInit{
     self.textStorage = [[SXReaderTextStorage alloc] init];
     [self.textStorage setAttributedString:self.content];

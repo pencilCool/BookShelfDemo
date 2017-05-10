@@ -32,7 +32,7 @@
     NSMutableAttributedString *parsedOutput = [NSMutableAttributedString new];
     
     
-    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str attributes:@{NSFontAttributeName: [[ReaderManager sharedManager] currentFont]}];
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:str];
     [parsedOutput appendAttributedString:attributedText];
     
     

@@ -105,6 +105,18 @@
     return self.currentChapter.layoutManager.textContainers[_currentChapeterContainerIndex];
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 #pragma mark - Font 
 
 - (UIFont *)defaultFont
@@ -118,26 +130,28 @@
     CGFloat fontSize = [_currentFont pointSize];
     if (fontSize > 13.0) {
         _currentFont = [UIFont systemFontOfSize:--fontSize];
+        [self.currentChapter.textStorage update:_currentFont];
         return  YES;
     }else {
         return NO;
     }
-    
 }
 
-- (CGFloat)currentFontSize
-{
-    return [_currentFont pointSize];
-}
 - (BOOL)biggerFontSize
 {
     CGFloat fontSize = [_currentFont pointSize];
     if (fontSize < 30.0) {
         _currentFont = [UIFont systemFontOfSize:++fontSize];
+        [self.currentChapter.textStorage update:_currentFont];
         return  YES;
     }else {
         return NO;
     }
+}
+
+- (CGFloat)currentFontSize
+{
+    return [_currentFont pointSize];
 }
 
 @end
