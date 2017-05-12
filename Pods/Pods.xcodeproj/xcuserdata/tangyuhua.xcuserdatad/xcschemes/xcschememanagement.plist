@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BEMCheckBox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>BlocksKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F7168D7188F839D18297638869FDCC8</key>
+		<key>23C46D12E093E8E822378781F8728EEC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63B8DEE2F52531813FE1D96135EBA5C0</key>
+		<key>4469D0F383469D2CC36697A73FB85D5B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8E0E38575094E503D2A0159C6C1BDDA0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

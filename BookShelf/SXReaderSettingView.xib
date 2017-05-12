@@ -67,13 +67,13 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deM-Ql-pvL">
-                            <rect key="frame" x="119.5" y="20" width="20.5" height="20.5"/>
+                            <rect key="frame" x="119" y="20" width="21" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jt9-FI-5il">
-                            <rect key="frame" x="199.5" y="0.0" width="60" height="60"/>
+                            <rect key="frame" x="199" y="0.0" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="G7H-lj-Aaw"/>
                                 <constraint firstAttribute="height" constant="60" id="Uiv-fL-XLV"/>
@@ -98,21 +98,21 @@
                     <rect key="frame" x="0.0" y="180" width="389" height="60"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmX-Ov-EVe">
-                            <rect key="frame" x="0.0" y="0.0" width="97.5" height="60"/>
+                            <rect key="frame" x="0.0" y="0.0" width="97" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="C5r-Y4-lzz"/>
                             </constraints>
                             <state key="normal" title="横竖屏解锁"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-Xa-8BH">
-                            <rect key="frame" x="97.5" y="0.0" width="97" height="60"/>
+                            <rect key="frame" x="97" y="0.0" width="98" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="XOy-H6-xvJ"/>
                             </constraints>
                             <state key="normal" title="朗读"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGY-oQ-cNb">
-                            <rect key="frame" x="194.5" y="0.0" width="97.5" height="60"/>
+                            <rect key="frame" x="195" y="0.0" width="97" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="L2d-pL-Nza"/>
                             </constraints>
@@ -127,7 +127,7 @@
                         </button>
                     </subviews>
                 </stackView>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDO-yK-8jb">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDO-yK-8jb">
                     <rect key="frame" x="0.0" y="120" width="389" height="60"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="Xic-U7-G22"/>
@@ -154,8 +154,16 @@
                 <outlet property="bigFontButton" destination="Jt9-FI-5il" id="kJh-C4-dOT"/>
                 <outlet property="fontSizeLabel" destination="deM-Ql-pvL" id="uWB-qX-XRt"/>
                 <outlet property="smallFontButton" destination="4Zu-Hz-2Ak" id="aJ7-Ui-AT4"/>
+                <outlet property="themeScrollView" destination="IDO-yK-8jb" id="cBT-sv-B93"/>
             </connections>
             <point key="canvasLocation" x="7.5" y="-104.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="sfG-bL-uOf">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="33"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-133" y="-69.5"/>
         </view>
     </objects>
 </document>

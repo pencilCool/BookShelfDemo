@@ -1,4 +1,5 @@
 PODS:
+  - BEMCheckBox (1.4.0)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
@@ -20,15 +21,17 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - BEMCheckBox
   - BlocksKit
   - Masonry
   - YYKit
 
 SPEC CHECKSUMS:
+  BEMCheckBox: e18e4a148905b290bd03d98b767651c104f4eda3
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 558ca7b7c2a4c906ca499c736e7b9e5f162872da
+PODFILE CHECKSUM: c40025f3331be101e590c80edc44cd5174baade5
 
 COCOAPODS: 1.1.1

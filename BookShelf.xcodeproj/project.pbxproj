@@ -41,6 +41,8 @@
 		EC701E6C1EAF51A500D4EFCE /* UIColor+SXAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701E6B1EAF51A500D4EFCE /* UIColor+SXAdd.m */; };
 		EC701EBC1EAF644C00D4EFCE /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EC701EBB1EAF644C00D4EFCE /* testImage.png */; };
 		EC701EBF1EAF675600D4EFCE /* BookShelfHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC701EBE1EAF675600D4EFCE /* BookShelfHeadView.m */; };
+		ECB71E461EC31E23004C1A16 /* UIColor+SXConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB71E451EC31E23004C1A16 /* UIColor+SXConfig.m */; };
+		ECDA4BE31EC5524D00A8CABF /* ThemeCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDA4BE21EC5524D00A8CABF /* ThemeCheckBox.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,10 @@
 		EC701EBB1EAF644C00D4EFCE /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 		EC701EBD1EAF675600D4EFCE /* BookShelfHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookShelfHeadView.h; sourceTree = "<group>"; };
 		EC701EBE1EAF675600D4EFCE /* BookShelfHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookShelfHeadView.m; sourceTree = "<group>"; };
+		ECB71E441EC31E23004C1A16 /* UIColor+SXConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SXConfig.h"; sourceTree = "<group>"; };
+		ECB71E451EC31E23004C1A16 /* UIColor+SXConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SXConfig.m"; sourceTree = "<group>"; };
+		ECDA4BE11EC5524D00A8CABF /* ThemeCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeCheckBox.h; sourceTree = "<group>"; };
+		ECDA4BE21EC5524D00A8CABF /* ThemeCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeCheckBox.m; sourceTree = "<group>"; };
 		F379553AA307065F429C24D6 /* libPods-BookShelf.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookShelf.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,6 +223,8 @@
 			children = (
 				EC37B53E1EC1715B00E29CEE /* SXHelper.h */,
 				EC37B53F1EC1715B00E29CEE /* SXHelper.m */,
+				ECB71E441EC31E23004C1A16 /* UIColor+SXConfig.h */,
+				ECB71E451EC31E23004C1A16 /* UIColor+SXConfig.m */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -346,6 +354,8 @@
 				EC3D8F031EC0798200D8E89E /* SXReaderSettingView.h */,
 				EC3D8F041EC0798200D8E89E /* SXReaderSettingView.m */,
 				EC3D8F061EC07A0200D8E89E /* SXReaderSettingView.xib */,
+				ECDA4BE11EC5524D00A8CABF /* ThemeCheckBox.h */,
+				ECDA4BE21EC5524D00A8CABF /* ThemeCheckBox.m */,
 				EC3785141EB18CBE00E8B6F5 /* StoryBoard */,
 			);
 			name = View;
@@ -548,6 +558,7 @@
 			files = (
 				EC701EBF1EAF675600D4EFCE /* BookShelfHeadView.m in Sources */,
 				EC37851F1EB19F6000E8B6F5 /* DownLoadCell.m in Sources */,
+				ECB71E461EC31E23004C1A16 /* UIColor+SXConfig.m in Sources */,
 				EC1D59D71EB084A7002AE988 /* ReaderViewController.m in Sources */,
 				EC701E681EAF4A5A00D4EFCE /* SXBookShelfCell.m in Sources */,
 				EC701E3B1EAF476800D4EFCE /* ViewController.m in Sources */,
@@ -555,6 +566,7 @@
 				EC1D59E51EB0959F002AE988 /* SXReadTopBar.m in Sources */,
 				EC701E381EAF476800D4EFCE /* AppDelegate.m in Sources */,
 				EC3C1B3C1EC04BBC00894961 /* SXReaderTextStorage.m in Sources */,
+				ECDA4BE31EC5524D00A8CABF /* ThemeCheckBox.m in Sources */,
 				EC1D59E01EB0923D002AE988 /* SXReadBottomBar.m in Sources */,
 				EC3785861EB2DA8E00E8B6F5 /* ReaderManager.m in Sources */,
 				EC3D8F021EC0744500D8E89E /* SXBottomStatusBar.m in Sources */,

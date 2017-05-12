@@ -7,17 +7,23 @@
 //
 
 #import "SXReaderSettingView.h"
+#import "ThemeCheckBox.h"
+
 @interface SXReaderSettingView()
 @property (weak, nonatomic) IBOutlet UIButton *smallFontButton;
-
 @property (weak, nonatomic) IBOutlet UIButton *bigFontButton;
 @property (weak, nonatomic) IBOutlet UILabel *fontSizeLabel;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *themeScrollView;
 
 
 @end
 @implementation SXReaderSettingView
+
 {
     CGRect originalFrame;
+    NSArray<UIButton *> * themeArray;
+    
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -25,6 +31,7 @@
     if (self = [super initWithCoder:aDecoder]) {
        self.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 240);
         [self configureEvent];
+        
     }
     return self;
 }
@@ -32,8 +39,8 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
-    
+    [self themeCheckButtonInit];
+  
 }
 
 - (void)configureEvent
@@ -59,6 +66,33 @@
         self.frame = CGRectMake(0, kScreenHeight, kScreenWidth, 240);
     }];
 }
+
+
+
+#pragma mark - Theme
+- (void)themeCheckButtonInit {
+    self.themeScrollView.contentSize = CGSizeMake(8 + 60 * 7, 60);
+    NSMutableArray *buttons = @[].mutableCopy;
+    for (int i = 0; i < 6; i ++) {
+        ThemeCheckBox *checkbox = [[ThemeCheckBox alloc] initWithFrame:CGRectMake(8 + 60 *i, 20, 60, 20)];
+        checkbox.themeColor = [UIColor readerThemeColor1];
+        [buttons appendObject:checkbox];
+        [self.themeScrollView addSubview:checkbox];
+    }
+    themeArray = [buttons copy];
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 #pragma mark - Font
 
